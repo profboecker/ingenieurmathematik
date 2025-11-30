@@ -1,0 +1,73 @@
+---
+title: Ingenieurmathematik
+subtitle: Folien zur Vorlesung
+author: Prof. Dr. Stefan Böcker, FRM
+date: \today
+toc: true
+output: fhswf::presentation
+knit: fhswf::render_presentation
+german: true
+lang: de-de
+---
+
+```{r setup, include=FALSE}
+options(digits = 4)
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, cache=FALSE, 
+                      dev.args=list(pointsize=11), size="scriptsize")
+remotes::install_github("profboecker/fhswf")
+```
+
+# Organisatorisches
+
+## Vorstellung und Kontaktdetails
+
+### Prof. Dr. Stefan Böcker
+
+-   Professur für Wirtschaftsinformatik, Datenbanken und mobile Technologien
+-   aktuell Studiendekan und Prüfungsausschussvorsitzender des Fachbereichs Technische Betriebswirtschaft
+-   Vorlesung Ingenieurmathematik
+-   **Email:** [boecker.stefan\@fh-swf.de](mailto:boecker.stefan@fh-swf.de){.email}
+
+### Dipl.-Math. Silke Beckmann
+
+-   Übungen zur Vorlesung Ingenieurmathematik
+-   **Email:** [beckmann.silke\@fh-swf.de](mailto:beckmann.silke@fh-swf.de){.email}
+
+## Lernzentrum
+
+Das Lernzentrum bietet Unterstützung in
+
+-   **Mathematik**
+-   Physik
+-   Elektrotechnik
+
+Details:
+
+-   Raum: H.412
+-   Öffnungszeiten: montags bis freitags von 09:00h bis 17:00h
+-   erreichbar auch online: [Lernzentrum Online](https://elearning.fh-swf.de/course/view.php?id=1570)
+
+## Lernzentrum Mitarbeiter
+
+### Jacqueline Grohs, M. Eng. ![Jacqueline Grohs, M. Eng.](./bilder/Jacqueline%20Grohs_8723.jpg)
+
+## Lernzentrum Mitarbeiter
+
+### Fabian Zmarowski, M. Eng. ![Fabian Zmarowski, M. Eng.](./bilder/Fabian_Zmarowski.jpg)
+
+-   Studentische Hilfskraft: Steven Gramsch
+
+## Formalia
+
+### Klausur
+
+-   deckt den Stoff des Semesters ab
+-   Dauer: 90 Minuten (Regelfall)
+-   Erlaubte Hilfsmittel: **Nicht-**Programmierbarer Taschenrechner
+
+## Unterlagen / Voraussetzungen
+
+### Unterlagen und Informationen zum Modul Ingenieurmathematik
+
+-   Es gibt einen Moodle-Kurs zum Modul [Ingenieurmathematik Sommersemester 2026](https://elearning.fh-swf.de/)
+-   **Wichtig:** Es gibt auch einen Kurs zu Terminen und Links mit allgemeinen Informationen: [Informationen und Mitteilungen Fachbereich TBW (Präsenzstudium)](https://elearning.fh-swf.de/course/view.php?id=20812)
