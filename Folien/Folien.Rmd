@@ -1,0 +1,183 @@
+---
+title: Ingenieurmathematik
+subtitle: Folien zur Vorlesung
+author: Prof. Dr. Stefan Böcker, FRM
+date: \today
+toc: true
+output: fhswf::presentation
+knit: fhswf::render_presentation
+german: true
+lang: de-de
+---
+
+```{r setup, include=FALSE}
+options(digits = 4)
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, cache=FALSE, 
+                      dev.args=list(pointsize=11), size="scriptsize")
+remotes::install_github("profboecker/fhswf")
+library(tidyverse)
+```
+
+# Organisatorisches
+
+## Vorstellung und Kontaktdetails
+
+### Prof. Dr. Stefan Böcker
+
+-   Professur für Wirtschaftsinformatik, Datenbanken und mobile Technologien
+-   aktuell Studiendekan und Prüfungsausschussvorsitzender des Fachbereichs Technische Betriebswirtschaft
+-   Vorlesung Ingenieurmathematik
+-   **Email:** [boecker.stefan\@fh-swf.de](mailto:boecker.stefan@fh-swf.de){.email}
+
+### Dipl.-Math. Silke Beckmann
+
+-   Übungen zur Vorlesung Ingenieurmathematik
+-   **Email:** [beckmann.silke\@fh-swf.de](mailto:beckmann.silke@fh-swf.de){.email}
+
+## Lernzentrum
+
+Das Lernzentrum bietet Unterstützung in
+
+-   **Mathematik**
+-   Physik
+-   Elektrotechnik
+
+Details:
+
+-   Raum: H.412
+-   Öffnungszeiten: montags bis freitags von 09:00h bis 17:00h
+-   erreichbar auch online: [Lernzentrum Online](https://elearning.fh-swf.de/course/view.php?id=1570)
+
+## Lernzentrum Mitarbeiter
+
+### Jacqueline Grohs, M. Eng. ![Jacqueline Grohs, M. Eng.](./bilder/Jacqueline%20Grohs_8723.jpg)
+
+## Lernzentrum Mitarbeiter
+
+### Fabian Zmarowski, M. Eng. ![Fabian Zmarowski, M. Eng.](./bilder/Fabian_Zmarowski.jpg)
+
+-   Studentische Hilfskraft: Steven Gramsch
+
+## Formalia
+
+### Klausur
+
+-   deckt den Stoff des Semesters ab
+-   Dauer: 90 Minuten (Regelfall)
+-   Erlaubte Hilfsmittel: **Nicht-**Programmierbarer Taschenrechner
+
+## Unterlagen / Voraussetzungen
+
+### Unterlagen und Informationen zum Modul Ingenieurmathematik
+
+-   Es gibt einen Moodle-Kurs zum Modul [Ingenieurmathematik Sommersemester 2026](https://elearning.fh-swf.de/)
+-   **Wichtig:** Es gibt auch einen Kurs zu Terminen und Links mit allgemeinen Informationen: [Informationen und Mitteilungen Fachbereich TBW (Präsenzstudium)](https://elearning.fh-swf.de/course/view.php?id=20812)
+
+# Komplexe Zahlen
+
+## Einführung der komplexen Zahlen
+
+## Rechenregeln für komplexe Zahlen
+
+## Darstellungsformen komplexer Zahlen
+
+## Anwendungsbeispiele komplexer Zahlen
+
+```{r}
+# Beispielpunkte
+z <- c(1 + 2i, -1 + 1i, -2 - 1.5i, 2 - 0.5i)
+labels <- c("z1", "z2", "z3", "z4")
+
+dat_c <- data.frame(
+  re = Re(z),
+  im = Im(z),
+  label = labels
+)
+
+ggplot(dat_c, aes(x = re, y = im, label = label)) +
+  geom_hline(yintercept = 0, color = "grey70") +
+  geom_vline(xintercept = 0, color = "grey70") +
+  geom_point(color = "purple", size = 3) +
+  geom_text(vjust = -1, size = 4) +
+  coord_equal(xlim = c(-3, 3), ylim = c(-3, 3)) +
+  labs(
+    title = "Komplexe Zahlen in der Gaußschen Ebene",
+    x = "Realteil",
+    y = "Imaginärteil"
+  ) +
+  theme_minimal()
+
+```
+
+
+# Differentialrechnung
+
+## Rechenregeln der Differentialrechnung
+
+## Ableitung elementarer Funktionen
+
+```{r}
+f  <- function(x) x^3 - 3*x
+df <- function(x) 3*x^2 - 3
+
+x_vals <- seq(-3, 3, length.out = 400)
+dat <- data.frame(
+  x   = x_vals,
+  fx  = f(x_vals),
+  dfx = df(x_vals)
+)
+
+ggplot(dat, aes(x = x)) +
+  geom_hline(yintercept = 0, color = "grey70") +
+  geom_vline(xintercept = 0, color = "grey70") +
+  geom_line(aes(y = fx,  color = "f(x) = x^3 - 3x"), linewidth = 1.1) +
+  geom_line(aes(y = dfx, color = "f'(x) = 3x^2 - 3"), linewidth = 1.1, linetype = "dashed") +
+  scale_color_manual(values = c("f(x) = x^3 - 3x" = "steelblue",
+                                "f'(x) = 3x^2 - 3" = "firebrick")) +
+  labs(
+    title = "Funktion und Ableitung",
+    x = "x",
+    y = "Funktionswert",
+    color = "Kurve"
+  ) +
+  theme_minimal()
+```
+
+
+## Anwendungen der Differentialrechnung
+
+
+# Integralrechnung
+
+## Bestimmtes/unbestimmtes Integral
+
+```{r}
+g <- function(x) sin(x)
+
+x_vals <- seq(0, pi, length.out = 400)
+dat_int <- data.frame(
+  x  = x_vals,
+  gx = g(x_vals)
+)
+
+ggplot(dat_int, aes(x = x, y = gx)) +
+  geom_line(color = "steelblue", linewidth = 1.1) +
+  geom_area(fill = "steelblue", alpha = 0.3) +
+  scale_x_continuous(breaks = c(0, pi/2, pi),
+                     labels = c("0", expression(pi/2), expression(pi))) +
+  labs(
+    title = "Integral als Fläche unter dem Graphen",
+    x = "x",
+    y = "g(x) = sin(x)"
+  ) +
+  theme_minimal()
+
+```
+
+
+## Integrationsregeln
+
+## Hauptsatz der Differential- und Integralrechnung
+
+## Anwendung der Integralrechnung
+
