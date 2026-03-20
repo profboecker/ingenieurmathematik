@@ -1,0 +1,32 @@
+\definecolor{ffzzqq}{rgb}{1.,0.6,0.}
+\definecolor{ccwwqq}{rgb}{0.8,0.4,0.}
+\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-0.1303703703703693,-0.09925925925926203) grid (6.85037037037037,4.048888888888889);
+\draw[->,color=black] (0.,0.) -- (6.85037037037037,0.);
+\foreach \x in {,1.,2.,3.,4.,5.,6.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,0.) -- (0.,4.048888888888889);
+\foreach \y in {,1.,2.,3.,4.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-0.1303703703703693,-0.09925925925926203) rectangle (6.85037037037037,4.048888888888889);
+\draw [->,line width=2.8pt] (0.,0.) -- (3.,4.);
+\draw [line width=2.8pt,color=ccwwqq] (3.,4.)-- (3.,0.);
+\draw [line width=2.8pt,color=ffzzqq] (3.,0.)-- (0.,0.);
+\begin{scriptsize}
+\draw [fill=uuuuuu] (0.,0.) circle (1.5pt);
+\draw[color=uuuuuu] (0.04148148148148249,0.08444444444444182) node {$O$};
+\draw [fill=qqqqff] (3.,4.) circle (1.5pt);
+\draw[color=qqqqff] (3.04,4.001481481481482) node {$A$};
+\draw[color=black] (2.0,2.0) node {$\vv{a}$};
+\draw[color=black] (0.8,2.0) node {$\| \vv{a}\| = 5$};
+\draw [fill=xdxdff] (3.,0.) circle (1.5pt);
+\draw[color=xdxdff] (3.04,0.08444444444444182) node {$B$};
+\draw[color=ccwwqq] (4.0044444444444447,2.0696296296296284) node {$a_y = 4$};
+\draw[color=ffzzqq] (1.6,0.26148148148147892) node {$a_x = 3$};
+\end{scriptsize}
+\end{tikzpicture}

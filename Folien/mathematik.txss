@@ -1,0 +1,19 @@
+[InternalPDFViewer]
+Embedded=true
+File=mathematik.pdf
+
+[Session]
+Bookmarks=@Variant(\0\0\0\t\0\0\0\x1\0\0\0\v\0\0\0\x4\0\0\0*\0m\0\x61\0t\0h\0\x65\0\x32\0_\0\x66\0u\0n\0k\0t\0i\0o\0n\0\x65\0n\0.\0t\0\x65\0x\0\0\0\x4\0\x32\0\x32\0\0\0\x2\0\x37\0\0\0z\0m\0\x61\0t\0h\0\x65\0\x32\0_\0\x66\0u\0n\0k\0t\0i\0o\0n\0\x65\0n\0.\0t\0\x65\0x\0\n\0\\\0s\0u\0\x62\0s\0u\0\x62\0s\0\x65\0\x63\0t\0i\0o\0n\0{\0G\0r\0\x65\0n\0z\0w\0\x65\0r\0t\0\x65\0 \0\x66\0\xfc\0r\0 \0$\0x\0 \0\\\0t\0o\0 \0$\0})
+CurrentFile=mathematik.tex
+File0\Col=1
+File0\FileName=mathematik.tex
+File0\FirstLine=128
+File0\FoldedLines=
+File0\Line=137
+File1\Col=0
+File1\FileName=mathe2_funktionen.tex
+File1\FirstLine=16
+File1\FoldedLines=
+File1\Line=30
+FileVersion=1
+MasterFile=mathematik.tex

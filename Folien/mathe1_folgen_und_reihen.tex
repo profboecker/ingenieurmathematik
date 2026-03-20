@@ -1,0 +1,722 @@
+\section{Analysis - Folgen und Reihen}
+\subsection{Folgen}
+\subsubsection{Folgen und Grenzwerte}
+\begin{frame}{Folgen}
+	\begin{definition}
+		Eine \textbf{reellwertige Folge} $(a_{n})_{n \in \mathbb{N}}$ ist eine Abbildung von $\mathbb{N}$ in $\mathbb{R}$, d. h. jedem $n \in \mathbb{N}$ wird eine reelle Zahl $a_{n} \in \mathbb{R}$ zugeordnet.
+		
+		Falls $a_{n} = c$ für alle $n \in \mathbb{N}$ und eine feste Zahl $c$, so heißt die Folge $(a_{n})_{n \in \mathbb{N}}$ \textbf{konstante Folge}.
+		
+		Eine Folge, für die $a_{n+1} = q \cdot a_{n}$ erfüllt ist für alle $n \in \mathbb{N}$, heißt \textbf{geometrische Folge}.
+	\end{definition}
+	\begin{example}
+		Beispiele für Folgen sind:
+		\begin{align*}
+			(a_{n})_{n \in \mathbb{N}} = (n)_{n \in \mathbb{N}} & \mbox{ also } (1, 2, 3, 4, 5, 6, \ldots) \\
+			(a_{n})_{n \in \mathbb{N}} = \left(\frac{1}{n}\right)_{n \in \mathbb{N}} & \mbox{ also } (1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{5}, \frac{1}{6}, \ldots) \\
+			(a_{n})_{n \in \mathbb{N}} = \left((-1)^{n}\frac{1}{n}\right)_{n \in \mathbb{N}} & \mbox{ also } (-1, \frac{1}{2}, -\frac{1}{3}, \frac{1}{4}, -\frac{1}{5}, \frac{1}{6}, \ldots)	
+		\end{align*}
+	\end{example}
+\end{frame}
+
+\begin{frame}{Beispiele für Folgen}
+	\begin{definition}
+		Die Folge
+		\[
+		a_{n} := \frac{1}{n} \mbox{ mit } \left(a_{n}\right) = \left(\frac{1}{1}, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \ldots \right)
+		\] heißt \textbf{harmonische Folge}.
+	\end{definition}
+	
+\end{frame}
+
+\begin{frame}{Beispiele rekursiv definierter Folgen}
+		Man kann folgen auch \textbf{rekursiv} definieren. 
+	\begin{example}
+		Die \textbf{Fibonacci-Folge} wird definiert als:
+		\[
+			a_{1} := 1 \qquad a_{2} := 1 \qquad a_{n} := a_{n-1} + a_{n-2} \mbox{ für } n \geq 3
+		\]
+		also 
+		\[
+			 \left( a_{n} \right) = \left( 1, 1, 2, 3, 5, 8, 13, 21, \ldots \right) 
+		\]
+	\end{example}
+	\begin{example}
+		Für die Folge
+		\[
+		a_{1} := 1 \qquad a_{n} := n \cdot a_{n-1} \mbox{ für } n \geq 2
+		\]
+		ist die Folge der Fakultäten:
+		\[
+			a_{n} = n!
+		\]
+	\end{example}
+\end{frame}
+
+\begin{frame}{Numerische Berechnung von Wurzeln}
+	\begin{example}
+		Für eine Zahl $x > 0$ sei $a_{1} := 1$ und
+		\[
+			a_{n+1} := \frac{1}{2} \left( a_{n} + \frac{x}{a_{n}} \right) \mbox{ für alle } n \geq 1 
+		\]
+		Diese Folge nennen wir hier \textbf{Heron-Folge zur Zahl $x$}.
+	\end{example} 
+\end{frame}
+
+\begin{frame}{Folgen}
+	\begin{bemerkung}
+		Es gibt auch allgemeinere Folgen, die jedem $n \in \mathbb{N}$ ein Element einer beliebigen Menge $M$ zuordnet.
+		
+		Die Zahlen bzw. Elemente $a_{n}$ heißen \textbf{Glieder der Folge}.
+		
+		Folgen können beliebige Abfolgen von Elementen der Bildmenge $M$ (hier immer $\mathbb{R}$) sein. Falls es aber eine Regel gibt, nach der die Folgenglieder berechnet werden, nennt man diese Regel das \textbf{Bildungsgesetz der Folge}.
+	\end{bemerkung}
+\end{frame}
+
+\begin{frame}{Eigenschaften von Zahlenfolgen}
+	\begin{definition}
+		Eine Folge $(a_{n})_{n \in \mathbb{N}}$ heißt
+		\begin{itemize}
+			\item \textbf{nach oben beschränkt}, wenn es eine Zahl $M$ gibt, sodass $a_{n} < M$ für alle $n \in \mathbb{N}$.
+			\item \textbf{nach unten beschränkt}, wenn es eine Zahl $m$ gibt, sodass $m < a_{n}$ für alle $n \in \mathbb{N}$.
+			\item \textbf{beschränkt}, wenn sie nach oben und nach unten beschränkt ist.
+			\item \textbf{unbeschränkt}, wenn sie nicht beschränkt ist.
+			\item \textbf{streng monoton steigend}, wenn $a_{n+1}>a_{n}$ für alle $n \in \mathbb{N}$.
+			\item \textbf{monoton steigend}, wenn $a_{n+1}\geq a_{n}$ für alle $n \in \mathbb{N}$.
+			\item \textbf{streng monoton fallend}, wenn $a_{n+1}<a_{n}$ für alle $n \in \mathbb{N}$.
+			\item \textbf{monoton fallend}, wenn $a_{n+1}\leq a_{n}$ für alle $n \in \mathbb{N}$.
+			\item \textbf{alternierend}, wenn $a_{n} \cdot a_{n+1} < 0$ für alle $n \in \mathbb{N}$, d. h. die Vorzeichen benachbarter Folgenglieder wechseln.
+		\end{itemize}
+	\end{definition}
+\end{frame}
+
+\begin{frame}{Eigenschaften von Zahlenfolgen}
+	\begin{definition}
+		Eine Zahl $h$ heißt \textbf{Häufungspunkt der Folge} $(a_{n})_{n \in \mathbb{N}}$, wenn für jedes $\varepsilon>0$ 
+		\[
+			\left| a_{n} - h \right| < \varepsilon
+		\]
+		für \textbf{unendlich} viele Folgenglieder gilt.
+		
+		Das heißt anschaulich: Egal wie nah man $h$ kommt, es gibt immer noch unendlich viele Folgenglieder, die noch näher an $h$ liegen.
+		
+		Hat eine Folge \textbf{genau einen} Häufungspunkt $h$, so nennt man die Folge \textbf{konvergent} und $h$ den \textbf{Grenzwert} der Folge und man schreibt:
+		\[
+			\lim_{n \to \infty} a_{n} = h
+		\]
+		
+		Eine \textbf{nicht konvergente} Folge heißt \textbf{divergent}.
+	\end{definition}
+\end{frame}
+
+\begin{frame}{Konvergenz von Folgen}
+	\begin{theorem}
+		Eine Folge ist genau dann kovergent gegen $h \in \mathbb{R}$, wenn es zu jedem $\varepsilon > 0$ eine Zahl $N(\varepsilon) \in \mathbb{N}$ gibt, sodass
+		\[
+			\left| a_{n} - h \right| < \varepsilon \qquad \forall n > N(\varepsilon)
+		\]  
+	\end{theorem}
+	\begin{bemerkung}
+		Eine konvergente Folge, deren Grenzwert $h = 0$ ist, heißt \textbf{Nullfolge}.
+		
+		Wächst eine Zahlenfolge über alle Grenzen, so schreibt man:
+		\[
+		\lim_{n \to \infty} a_{n} = \infty
+		\]
+	\end{bemerkung}
+\end{frame}
+
+\begin{frame}{Konvergenz und Monotonie}
+	\begin{theorem}
+		Jede \textbf{beschränkte und monotone} Zahlenfolge ist \textbf{konvergent}.
+	\end{theorem}
+	\begin{bemerkung}
+		Beide Bedingungen (Beschränktheit und Monotonie) sind wichtig, eine allein reicht (noch) nicht aus für die Konvergenz einer Folge.
+	\end{bemerkung}
+\end{frame}
+
+\begin{frame}{Rechenregeln für Grenzwerte}
+	\begin{theorem}
+		Es gilt für zwei \textbf{konvergente} Folgen $(a_{n})_{n \in \mathbb{N}}$ und $(b_{n})_{n \in \mathbb{N}}$ mit 
+		\[
+		\lim_{n \to \infty} a_{n} = a \mbox{  und  } \lim_{n \to \infty} b_{n} = b
+		\] 
+		\begin{itemize}
+			\item Die \textbf{Summenfolge} $(c_{n})_{n \in \mathbb{N}}$ mit $c_{n} := a_{n} + b_{n}$ konvergiert und:
+			\[
+			\lim_{n \to \infty} c_{n} = \lim_{n \to \infty} a_{n} + b_{n} = \lim_{n \to \infty} a_{n} + \lim_{n \to \infty} b_{n} = a + b
+			\]
+			\item Die Folge $d_{n} := c \cdot a_{n}$ mit einer Konstanten $c \in \mathbb{R}$  konvergiert:
+			\[
+			\lim_{n \to \infty} d_{n} = \lim_{n \to \infty} c \cdot a_{n} = c \cdot a
+			\]
+			\item Die \textbf{Produktfolge} $(p_{n})_{n \in \mathbb{N}}$ mit $p_{n} := a_{n} \cdot b_{n}$ konvergiert mit:
+			\[
+			\lim_{n \to \infty} p_{n} = \lim_{n \to \infty} a_{n} \cdot b_{n} = \lim_{n \to \infty} a_{n} \cdot \lim_{n \to \infty} b_{n} = a \cdot b
+			\]
+		\end{itemize}
+	\end{theorem}
+\end{frame}
+
+\begin{frame}{Rechenregeln für Grenzwerte}
+	\begin{bemerkung}
+		Aus dem vorherigen Satz folgt für zwei \textbf{konvergente} Folgen $(a_{n})_{n \in \mathbb{N}}$ und $(b_{n})_{n \in \mathbb{N}}$ auch:
+		\begin{itemize}
+			\item Die Differenzfolge konvergiert:
+			\[
+			\lim_{n \to \infty} (a_{n} - b_{n}) = \lim_{n \to \infty} a_{n} - \lim_{n \to \infty} b_{n} = a - b
+			\]
+			\item Sind alle $b_{n} \neq 0$ und $b \neq 0$, so konvergiert auch die \textbf{Quotientenfolge}:
+			\[
+			\lim_{n \to \infty} \frac{a_{n}}{b_{n}} = \frac{\lim_{n \to \infty} a_{n}}{\lim_{n \to \infty} b_{n}} = \frac{a}{b}
+			\]
+%						
+		\end{itemize}
+	\end{bemerkung}
+\end{frame}
+
+\begin{frame}{Beispiele für die Berechnung von Grenzwerten}
+	\begin{example}
+	\begin{align*}
+		& \lim_{n \to \infty} \frac{2n}{n+1} = \lim_{n \to \infty} \frac{2n+2 - 2}{n+1}  = \lim_{n \to \infty} \frac{2(n+1) - 2}{n+1} \\ & = \lim_{n \to \infty} \left( 2 - \frac{2}{n+1} \right) = \lim_{n \to \infty} 2 - \lim_{n \to \infty} \frac{2}{n+1}  = 2 - 0   = 2 \\
+		& \lim_{n \to \infty} \cos \left( 2- \frac{1}{n} \right)  = \cos 2 \\
+		& \lim_{n \to \infty} (-1)^{n} \left( 1 + \frac{1}{n}  \right) \mbox{ existiert nicht! Warum?}
+	\end{align*}
+	\end{example}
+\end{frame}
+
+\begin{frame}{Numerische Berechnung von Wurzeln}
+	\begin{theorem}
+		Die \textbf{Heron-Folge zur Zahl $x>0$} mit $a_{1} = 1$ und
+		\[
+		a_{n+1} := \frac{1}{2} \left( a_{n} + \frac{x}{a_{n}} \right) \mbox{ für alle } n \geq 1 		
+		\]
+		konvergiert und für den Grenzwert gilt:
+		\[
+			a := \lim_{n \to \infty} a_{n+1} = \lim_{n \to \infty} \frac{1}{2} \left( a_{n} + \frac{x}{a_{n}} \right)
+		\]
+		und daher für $a$ 
+		\[
+			a = \frac{1}{2} \left( a + \frac{x}{a} \right)
+		\]
+		Diese Gleichung hat nur die positive Lösung $a=\sqrt{x}$ und daher:
+		\[
+			\lim_{n \to \infty} a_{n} = \sqrt{x}
+		\]
+	\end{theorem}
+\end{frame}
+
+\subsubsection{Spezielle Folgen}
+
+\begin{frame}{Arithmetische Folgen}
+	\begin{definition}
+		Gilt für eine Folge $\left(a_{n}\right)_{n \in \mathbb{N}}$ für alle $n \in \mathbb{N}$:
+		\[
+		d := a_{n+1} - a_{n} = \mbox{konstant,}
+		\]
+		so heißt sie \textbf{arithmetische Folge}.
+	\end{definition}
+\end{frame}	
+\begin{frame}{Eigenschaften arithmetischer Folgen}
+	\begin{bemerkung}
+		\begin{itemize}
+		\item Eine arithmetische Folge ist \textbf{eindeutig} durch das Anfangsglied $a_{1}$ und die konstante Differenz $d$ bestimmt und es gilt:
+		\[
+			a_{n} = a_{1} + d \cdot (n - 1)
+		\]
+		\item Da für eine arithmetische Folge sowohl
+		\[
+			d = a_{n+1} - a_{n} \mbox{ als auch } d = a_{n} - a_{n-1}
+		\] 
+		gilt, ist (durch Gleichsetzen der beiden Gleichungen)
+		\[
+			a_{n} = \frac{1}{2} \left( a_{n+1} + a_{n-1}\right)
+		\]
+		also jedes Folgenglied das \textbf{arithemtische Mittel} seiner benachbarten Folgenglieder.
+		\end{itemize}	
+	\end{bemerkung}
+\end{frame}
+
+\begin{frame}{Divergenz/Konvergenz arithmetischer Folgen}
+	\begin{theorem}
+		Eine \textbf{arithmetische Folge} konvergiert dann und nur dann, wenn $d = a_{n} - a_{n-1} = 0$ ist. In diesem Fall ist die Folge sogar konstant und es gilt:
+		\[
+		\lim_{n \to \infty} a_{n} = a_{1} = a_{2} = \cdots
+		\] 
+		
+		Gilt für eine arithmetische Folge also $d \neq 0$, dann divergiert die Folge:
+		\begin{align*}
+			\lim_{n \to \infty} a_{n} & = \infty & \mbox{ falls d > 0} \\
+			\lim_{n \to \infty} a_{n} & = - \infty & \mbox{ falls d < 0}
+		\end{align*}
+	\end{theorem}
+\end{frame}
+
+\begin{frame}{Geometrische Folgen}
+	\begin{definition}
+		Eine Folge $(a_{n})_{n \in \mathbb{N}}$ heißt \textbf{geometrische Folge}, wenn 
+		\[
+		\frac{a_{n+1}}{a_{n}} = q = \mbox{const. für alle } n \in \mathbb{N}   
+		\]
+		ist.
+	\end{definition}
+\end{frame}	
+\begin{frame}{Eigenschaften geometrischer Folgen}
+	\begin{bemerkung}
+		\begin{itemize}
+		\item Eine geometrische Folge ist eindeutig durch ihr Anfangsglied $a_{1}$ und den konstanten Quotienten $q$ bestimmt und es gilt:
+		\[
+			a_{n} = a_{1} \cdot q^{n-1}
+		\]
+		\item Da für eine geometrische Folge sowohl
+		\[
+		q = \frac{a_{n+1}}{a_{n}} \mbox{ als auch } q = \frac{a_{n}}{a_{n-1}}
+		\]
+		gilt, ist  (durch Gleichsetzen der beiden Gleichungen)
+		\[
+			a_{n} = \sqrt{a_{n-1} \cdot a_{n+1}}
+		\]
+		also jedes Folgenglied das \textbf{geometrische Mittel} seiner benachbarten Folgenglieder.
+		\end{itemize} 
+	\end{bemerkung}
+\end{frame}
+
+\begin{frame}{Konvergenz/Divergenz geometrischer Folgen}
+	\begin{bemerkung}
+	Bezüglich der Konvergenz bzw. Divergenz einer geometrischen Folge $a_{n} = a_{1} q^{n-1}$ gilt folgende Fallunterscheidung:
+	\begin{itemize}
+		\item Falls $|q| < 1$ ist, so konvergiert die Folge gegen 0. 
+		\[
+		\lim_{n \to \infty} a_{n} = \lim_{n \to \infty} a_{1} q^{n-1} = 0
+		\]
+		\item Falls $q\leq-1$ ist, so ist die Folge alternierend und divergent.
+		\item Falls $q>1$ ist, so ist die Folge divergent.
+		\item Falls $q=1$ ist, so konvergiert die Folge, weil sie konstant ist: $\lim_{n \to \infty} a_{n} = \lim_{n \to \infty} a_{1} \cdot 1^{n-1} = a_{1}$.
+	\end{itemize}
+	\end{bemerkung}	
+\end{frame}
+
+\begin{frame}{Techniken zum Nachweis von Beschränktheit und Monotonie}
+	\begin{itemize}
+		\item Sind alle Folgenglieder positiv bzw. negativ? Falls ja: Die Folge ist durch 0 nach oben bzw. nach unten beschränkt.
+		\item Gilt $a_{n+1} - a_{n} \geq 0$ oder $a_{n+1} - a_{n} > 0$? Falls ja: Die Folge ist monoton wachsend bzw. streng monoton wachsend.
+		\item Gilt $a_{n+1} - a_{n} \leq 0$ oder $a_{n+1} - a_{n} < 0$? Falls ja: Die Folge ist monoton fallend bzw. streng monoton fallend.
+		\item Gilt $\frac{a_{n+1}}{a_{n}} \geq 1$ oder $\frac{a_{n+1}}{a_{n}} > 1$? Falls ja: Die Folge ist monoton wachsend bzw. streng monoton wachsend.
+		\item Gilt $\frac{a_{n+1}}{a_{n}} \leq 1$ oder $\frac{a_{n+1}}{a_{n}} < 1$? Falls ja: Die Folge ist monoton fallend bzw. streng monoton fallend.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Berechnung von Grenzwerten - Beispiele}
+	\begin{example}
+		\begin{align*}
+		\lim_{n \to \infty} \frac{2}{n} + \left(\frac{1}{3}\right)^{n} +7 & = 7 \\
+		\lim_{n \to \infty} \frac{3n^{2} +7n + 8}{5n^{2} -8n +1} & = \frac{3}{5} \\
+		\lim_{n \to \infty} \frac{a_{r} n^{r} + \ldots + a_{1} n + a_{0}}{b_{s} n^{s} + \ldots + b_{1} n + b_{0}} & = \begin{cases}
+		0 & \text{falls } r <s \\
+		+\infty & \text{falls } s<r \text{ und } \frac{a_{r}}{b_{s}} > 0 \\
+		-\infty & \text{falls } s<r \text{ und } \frac{a_{r}}{b_{s}} < 0 \\
+		\frac{a_{r}}{b_{s}} & \text{falls s=r} \\
+		\end{cases} \\
+		\lim_{n \to \infty} \sqrt{n^{2}+3n+3} -n & = \frac{3}{2} \\
+		\lim_{n \to \infty} \frac{n}{2^{n}} = 0
+ 		\end{align*}
+	\end{example}
+\end{frame} 
+
+\begin{frame}{Grenzwertbestimmung bei rekursiv definierten Folgen}
+	\begin{bemerkung}
+	Falls eine Folge $(a_{n})$ rekursiv definiert wird (wie z.B. die Heron-Folge), bestimmt man den Grenzwert in der Regel wie folgt:
+	\begin{itemize}
+		\item Man zeigt, dass die Folge konvergiert z.B. durch
+		\begin{itemize}
+			\item $(a_{n})$ ist beschränkt und
+			\item $(a_{n})$ ist monoton.
+		\end{itemize}
+		\item Man ersetzt in der Rekursionsvorschrift alle $a_{n+1}$, $a_{n}$ usw. durch den zu berechnenden Grenzwert $a$ und erhält damit eine sogenannte Fixpunktgleichung für a.
+		\item Man löst die Fixpunktgleichung aus dem vorherigen Schritt.
+ 	\end{itemize}
+	\end{bemerkung}
+\end{frame}
+
+\begin{frame}{Grenzwertberechnung rekursiv definierter Folgen}
+	\footnotesize{
+	\begin{example}
+		Für die Folge $a_{n}$ mit
+		\[
+			a_{1} := 0 \qquad a_{n+1} = \sqrt{2 a_{n}}
+		\]
+		gilt:
+		\begin{itemize}
+			\item $a_{n}$ konvergiert, weil $a_{n}$ einerseits beschränkt ist, denn $0  \leq a_{1} \leq 2$ und daher für alle $n$
+			\[
+				0 \leq a_{n+1} = \sqrt{2 a_{n}} = \sqrt{2} \sqrt{a_{n}} \leq \sqrt{2} \sqrt{2} = 2 
+			\]
+			und andererseits monton wachsend ist:
+			\[
+				\frac{a_{n+1}}{a_{n}} = \frac{\sqrt{2a_{n}}}{a_{n}} = \sqrt{\frac{2}{a_{n}}} \geq 1
+			\]
+			\item Die Fixpunktgleichung lautet dann
+			\[
+				a = \sqrt{2a}
+			\] 
+			und hat die Lösungen $a=0$ und $a=2$. Da $a_{n}$ monoton wächst und $a_{1} = 1$ ist, muss der Grenzwert $a=2$ sein.
+		\end{itemize}
+	\end{example}
+}
+\end{frame}
+
+\subsection{Reihen}
+
+\begin{frame}{Reihen - Definition}
+	\begin{definition}
+	Für eine beliebige Zahlenfolge $(a_{n})_{n \in \mathbb{N}}$ heißt die Folge der \textbf{Partialsummen} $(s_{n})_{n \in \mathbb{N}}$ mit dem Bildungsgesetz
+	\[
+		s_{n} := \sum_{i=1}^{n} a_{i}
+	\]
+	eine \textbf{unendliche Reihe}.
+	
+	Konvergiert die Folge der Partialsummen $(s_n)$, so heißt die Reihe \textbf{konvergent}. Ansonsten heißt die Reihe \textbf{divergent}.
+	
+	Konvergiert die Reihe $(s_{n})$, so nennt man ihren Grenzwert 
+	\[
+		\lim_{n \to \infty} s_{n} = \lim_{n \to \infty} \sum_{i=1}^{n} a_{i} =: \sum_{i=1}^{\infty} a_{i} 
+ 	\]
+ 	den \textbf{Wert der Reihe}.
+	\end{definition}	
+\end{frame}
+
+\begin{frame}{Beispiele für Reihen}
+	\begin{example}
+		Die \textbf{geometrische Reihe} ist definiert als Folge der Partialsummen der geometrischen Folge 
+		\[
+			\sum_{i=1}^{n} a_{1} q^{i-1} = a_{1} \sum_{i=1}^{n} q^{i-1} = a_{1} \left( 1 + q + q^{2} + q^{3} + q^{4} + \ldots + q^{n-1}\right)
+		\]
+	\end{example}
+	\begin{example}
+		Die Reihe 
+		\[
+			s_{n}:= \sum_{k=1}^{n} \frac{1}{k(k+1)} = \sum_{k=1}^{n} \left( \frac{1}{k} - \frac{1}{k+1} \right) = 1 - \frac{1}{n+1}
+		\] 
+		ist offenbar auch explizit als Folge mit $s_{n} = 1-\frac{1}{n+1}$ definiert. An dieser Reihe kann man das wichtige Prinzip \textbf{der Teleskopsummen} erkennen.
+	\end{example}
+\end{frame}
+
+\begin{frame}{Beispiele für Konvergenz von Reihen}
+	\begin{example}
+		Die \textbf{harmonische Reihe} divergiert:
+		\[
+			\sum_{i=1}^{n} \frac{1}{i} = 1 + \frac{1}{2} + \frac{1}{3} + \ldots + \frac{1}{n}
+		\] 
+		Dagegen konvergiert die \textbf{alternierende harmonische Reihe} 
+		\[
+			\sum_{i=1}^{n} (-1)^{i+1} \frac{1}{i} = 1 - \frac{1}{2} + \frac{1}{3} - \ldots + (-1)^{n} \frac{1}{n} = \ln 2
+		\]
+	\end{example}
+\end{frame}
+
+\begin{frame}{Konvergenz von Reihen - Notwendige Bedingung}
+	\begin{bemerkung}
+		\textbf{Notwendig} für die Konvergenz der Reihe $(s_{n})$ ist, dass die Folge der Summanden $(a_{n})$ eine \textbf{Nullfolge} ist, also 
+		\[
+			\lim_{n \to \infty} s_{n} = \lim_{n \to \infty} \sum_{i=1}^{n} a_{i} \mbox{ konvergiert} \qquad \Rightarrow \lim_{n \to \infty} a_{n} = 0 
+		\]
+		Diese Bedingung ist aber \textbf{nicht hinreichend}, denn die harmonische Folge 
+		\[
+			a_{n} = \frac{1}{n} 
+		\]
+		konvergiert zwar gegen 0, aber die Reihe
+		\[
+			\sum_{i=1}^{n} a_{i} = \sum_{i=1}^{n} \frac{1}{i} \mbox{ divergiert.}
+		\]
+	\end{bemerkung}
+\end{frame}
+
+\begin{frame}{Arithmetische  Reihe}
+	\begin{definition}
+		Die Folge der Partialsummen/Teilsummen einer arithmetischen Folge $a_{n} = a_{1} + d (n-1)$, also
+		\[
+			s_{n} = \sum_{i=1}^{n} a_{i} = \sum_{i=1}^{n} a_{1} + d (i-1)
+		\]
+		heißt \textbf{arithmetische Reihe} und hat die Summenformel
+		\[
+			s_{n} = \frac{n}{2}	\left( a_{1} + a_{n} \right) = \frac{n}{2} \left( 2 a_{1} + d (n-1)  \right)
+		\]
+	\end{definition}
+	\begin{bemerkung}
+		Die Summenformel hat Carl Friedrich Gauß angeblich als 10-jähriger Schüler gefunden, als er zur Strafe die Zahlen von 1 bis 100 addieren sollte, was eine arithmetische Folge von Zahlen mit $a_{1}=1$ und $d=1$ ist.
+	\end{bemerkung}
+\end{frame}
+
+\begin{frame}{Arithmetische  Reihe - Gauß}
+	\begin{example}
+		Die Summenformel hat Gauß so hergeleitet:
+		\begin{align*}	
+			s_{n} & = a_1  +  & a_{1}  + d   + & \ldots  + & a_{1} + (n-1) d \\
+			s_{n} & = a_{1} + (n-1) d  + & a_{1} + (n-2)d    + & \ldots  + & a_{1} \\ 
+			\hline
+			\Rightarrow 2 s_{n} & = 2 a_{1} + (n-1) d + & 2 a_{1} + (n-1) d + & \ldots + & 2 a_{1} + (n-1) d
+		\end{align*}
+		Da das $n$-mal derselbe Term ist, ist also
+		\[	
+			2s_{n} = n \left( 2a_{1} + d(n-1) \right) = n \left( a_{1} + a_{1} + d(n-1) \right) = n \left( a_{1} + a_{n} \right)
+		\]
+	\end{example}
+\end{frame}	
+
+\begin{frame}{Beweis der Summenformel für die arithmetische Reihe}
+	\small{	Zu zeigen ist: 
+		\[
+			s_{n} = \sum_{i=1}^{n} a_{1} + d (i-1) = \frac{n}{2} \left(2a_{1} + d (n-1)\right)
+		\]
+		Diese Gleichung gilt für $n=1$, denn
+		\[
+			s_{1} = \sum_{i=1}^{1} a_{1} = \frac{1}{2}\left(2 a_{1} \right)
+		\]
+		Angenommen nun, die Gleichung gilt für $n$. Wir zeigen nun, dass sie dann auch für $n+1$ gilt:
+		\begin{align*}
+		& s_{n+1} = \sum_{i=1}^{n+1} a_{i}  = \left( \sum_{i=1}^{n} a_{i} \right) + a_{n+1}  = \frac{n}{2} \left( 2 a_{1} + d(n-1) \right) + a_{1} + d n \\
+		& = n a_{1} +  d n - d + a_{1} + dn   = (n+1) a_{1} + 2dn  = \frac{n+1}{2} \left( 2a_{1} + d (n+1 -1) \right)
+ 		\end{align*}}
+\end{frame}
+\begin{frame}{Summenformel}
+	\begin{example}
+		Die Summe der ersten $n$ natürlichen Zahlen ist daher
+		\[
+			\sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2}	
+	 \]
+	 \small{
+	 Für die Summe der ersten $n$ ungeraden Zahlen gilt:
+	 \[
+		 \sum_{i=1}^{n} 1 + 2 \cdot (i-1) = \sum_{i=1}^{n} 2\cdot i -1 =  1 + 3 + 5 + \ldots + 2\cdot n - 1 = \frac{n}{2}\left( 1 + 2n-1 \right) = n^{2}
+	 \]
+	 Für die Summe der ersten $n$ geraden Zahlen gilt:
+	 \[
+	 \sum_{i=1}^{n} 2 + 2 \cdot (i-1) = \sum_{i=1}^{n} 2\cdot i =  2 + 4 + 6 + \ldots + 2\cdot n = \frac{n}{2}\left( 2 + 2n \right) = n(n+1)
+	 \]
+	}
+	\end{example}
+\end{frame}
+
+\begin{frame}{Geometrische Reihe}
+		\begin{definition}
+			Die Folge der Partialsummen/Teilsummen einer geometrischen Folge $a_{n} = a_{1} q^{n-1}$, also
+			\[
+			s_{n} = \sum_{i=1}^{n} a_{i} = \sum_{i=1}^{n} a_{1} q^{i-1}
+			\]
+			heißt \textbf{geometrische Reihe} und hat für $q\neq 1 $ die Summenformel
+			\[
+				s_{n} = a_{1} \frac{1-q^{n}}{1-q} = a_{1} \frac{q^{n}-1}{q-1} 
+			\]
+		\end{definition}	
+\end{frame}
+
+\begin{frame}{Herleitung der Summenformel für geometrische Reihen}	
+	\begin{example}
+		Für die Summenformel gilt wie bei Gauß' Verfahren:
+		\begin{align*}	
+		s_{n} & = a_1  & + a_{1} q^{1} & + \ldots  & + a_{1}  q^{n-1}  \\
+		q s_{n} & = &  a_{1} q^{1} & + \ldots  & + a_{1} q^{n-1} & + a_{1} q^{n}  \\ 
+		\hline
+		\Rightarrow s_{n} -q s_{n} & = a_{1}  &  &  & & - a_{1} q^{n} 
+		\end{align*}
+		Es bleiben also zwei Terme übrig:
+		\[
+			s_{n} \left( 1-q \right) = a_{1} - a_{1} q^{n} = a_{1} \left( 1 - q^{n} \right)
+		\]
+		und daher (nur) für $q \neq 1$
+		\[
+			s_{n} = a_{1} \frac{1-q^{n}}{1-q}
+		\]	
+	\end{example}	
+\end{frame}
+
+\begin{frame}{Konvergenz von arithmetischer und geometrischer Reihe}
+	\begin{bemerkung}
+		Die \textbf{arithmetische Reihe} 
+		\[
+			\sum_{i=1}^{n} a_{1} + d (i-1) = \frac{n}{1} \left( 2a_{1} + d (n-1) \right) = \frac{(2a_{1}-d)n +d n^{2}}{2}
+		\]
+		konvergiert offensichtlich nur, wenn sowohl $d=0$ also auch $a_{1}=0$ ist. Deshalb ist die arithmetische Reihe eigentlich immer divergent.
+	\end{bemerkung}
+	\begin{bemerkung}
+		Die \textbf{geometrische Folge} ist nur für $|q|<1$ eine Nullfolge. 
+		
+		Daher gilt für die \textbf{geometrische Reihe} für $|q|<1$
+		\[
+		\lim_{n \to \infty} \sum_{i=1}^{n} a_{1} q^{n-1} = \lim_{n \to \infty} a_{1} \frac{1-q^{n}}{1-q} = \frac{a_{1}}{1-q}
+		\]
+	\end{bemerkung}
+\end{frame}
+
+\begin{frame}{Beispiele}
+	\begin{example}
+		Für $a_{1}=1$ und $q=\frac{3}{4}$ ist
+		\[
+			\sum_{i=0}^{\infty} \left( \frac{3}{4} \right)^{i} = \lim_{n \to \infty} \sum_{i=0}^{n} \left( \frac{3}{4} \right)^{i} =\lim_{n \to \infty} \frac{1-(\frac{3}{4})^{n+1}}{1-\frac{3}{4}}= \frac{1}{1-\frac{3}{4}} = 4 
+		\]
+				Für $a_{1}=1$ und $q=\frac{1}{2}$ ist
+				\[
+				\sum_{i=0}^{\infty} \left( \frac{1}{2} \right)^{i} = \lim_{n \to \infty} \sum_{i=0}^{n} \left( \frac{1}{2} \right)^{i} =\lim_{n \to \infty} \frac{1-(\frac{1}{2})^{n+1}}{1-\frac{1}{2}}= \frac{1}{1-\frac{1}{2}} = 2 
+				\]	
+	\end{example}
+\end{frame}
+
+%\begin{frame}{Rechenregeln für konvergente Reihen}
+%	\begin{theorem}
+%		Für zwei \textbf{konvergente Reihen}	$\sum_{i=1}^{\infty} a_{i} =: s_{a}$ und  $\sum_{i=1}^{\infty} b_{i} =: s_{b}$ 	gilt: 
+%		\begin{itemize}
+%			\item Die Reihe der Summen ist konvergent und
+%			\[
+%				\sum_{i=1}^{\infty} \left( a_{i} + b_{i} \right) = \sum_{i=1}^{\infty}a_{i} + \sum_{i=1}^{\infty} b_{i}   = s_{a} + s_{b} 
+%			\] 
+%			\item Für jedes $c \in \mathbb{R}$ gilt:
+%			\[
+%			\sum_{i=1}^{\infty} c a_{i} = c \sum_{i=1}^{\infty} a_{i} = c s_{a}  
+%			\]
+%			\item Ist $a_{i} \leq b_{i}$ für alle $i \in \mathbb{N}$, so gilt
+%			\[
+%				\sum_{i=1}^{\infty} a_{i} \leq \sum_{i=1}^{\infty} b_{i}  
+%			\]
+%		\end{itemize}
+%	\end{theorem}
+%\end{frame}
+%
+%\begin{frame}{Absolute Konvergenz}
+%	\begin{definition}
+%		Eine Reihe $\sum_{i=1}^{\infty} a_{i}$ \textbf{konvergiert absolut}, wenn die Folge der Partialsummen der Beträge der zugehörigen Folge konvergiert:
+%		\[
+%			\sum_{i=1}^{\infty} | a_{i} | = \lim_{n \to \infty} \sum_{i=1}^{n} | a_{i} | \text{ existiert.}
+%		\]
+%	\end{definition}
+%	\begin{bemerkung}
+%		Jede absolut konvergente Reihe konvergiert auch. Die absolute Konvergenz ist also  die stärkere Bedingung, denn jede absolut konvergente Reihe konvergiert auch, aber nicht jede konvergente Reihe konvergiert auch absolut.
+%	\end{bemerkung}
+%\end{frame}	
+%\begin{frame}{Beispiel absolute Konvergenz}
+%	\begin{example}
+%		Die Reihe 
+%		\[
+%			\sum\limits_{i=1}^{\infty} \left(-1\right)^{i}\frac{1}{i} = \ln 2
+%		\]
+%		konvergiert, aber sie konvergiert nicht absolut, denn
+%		\[
+%			\sum\limits_{i=1}^{\infty} \left| \left(-1 \right)^{i}  \frac{1}{i} \right| = \sum\limits_{i=1}^{\infty} \frac{1}{i} 
+%		\]
+%		ist die harmonische Reihe und divergiert bekanntlich.
+%	\end{example}
+%\end{frame}
+%
+%\subsubsection{Konvergenzkriterien}
+%\begin{frame}{Konvergenzkriterien für Reihen}
+%	Gegeben sei eine Reihe $\sum_{i=1}^{n} a_{i}$.
+%	Dann gilt:
+%	\begin{theorem}
+%		\begin{itemize}
+%			\item \textbf{Nullfolgenkriterium:} Falls die $a_{n}$ \textbf{keine} Nullfolge bilden, \textbf{divergiert} die Reihe $\sum_{i=1}^{n} a_{i}$.
+%			\item \textbf{Leibnizkriterium:} Die alternierende Reihe $\sum_{i=1}^{n} (-1)^{i} a_{i}$ \textbf{konvergiert}, falls $a_{i}$ eine \textbf{monoton fallende Nullfolge} ist. Das impliziert $a_{i}\geq 0$ für alle $i$. Für den Wert der Reihe gilt die Abschätzung:
+%			\[
+%				\left| \sum_{i=1}^{\infty} a_{i} - \sum_{i=1}^{n} a_{i} \right|  = \left| \sum_{i=n+1}^{\infty} a_{i}  \right| \leq a_{n+1} 
+%			\] 
+%			\item \textbf{Majorantenkriterium:} Die Reihe $\sum_{i=1}^{n} a_{i}$ \textbf{konvergiert absolut}, wenn es eine \textbf{konvergente} Reihe (Majorante) $\sum_{i=1}^{n} b_{i}$ gibt mit
+%			\[
+%				| a_{i} | \leq b_{i} \qquad \forall i \in \mathbb{N}
+%			\]
+%		\end{itemize}
+%	\end{theorem}
+%\end{frame}
+%
+%\begin{frame}{Konvergenzkriterien für Reihen}
+%	\begin{theorem}
+%		\begin{itemize}
+%			\item \textbf{Minorantenkriterium:} Die Reihe $\sum_{i=1}^{n} a_{i}$ \textbf{divergiert}, falls es eine \textbf{divergente Minorante} $\sum_{i=1}^{n} b_{i}$ gibt mit
+%			\[
+%				0 \leq b_{i} \leq a_{i} \qquad \forall i \in \mathbb{N}
+%			\]
+%			\item \textbf{Quotientenkriterium:} Existiert der Grenzwert $r = \lim_{i \to \infty} \left| \frac{a_{i+1}}{a_{i}} \right|$, so gilt:
+%			
+%				Im Fall $\begin{cases}
+%					r < 1 \qquad \text{konvergiert die Reihe (absolut)}\\
+%					r >1  \qquad \text{divergiert die Reihe}\\
+%					r = 1 \qquad \text{ist alles möglich.}
+%				\end{cases}$
+%			\item \textbf{Wurzelkriterium:} Existiert der Grenzwert $r = \lim_{i \to \infty} \sqrt[i]{\left| a_{i} \right|}$, so gilt:
+%			
+%			Im Fall $\begin{cases}
+%			r < 1 \qquad \text{konvergiert die Reihe (absolut)}\\
+%			r >1  \qquad \text{divergiert die Reihe}\\
+%			r = 1 \qquad \text{ist alles möglich.}
+%			\end{cases}$
+%		\end{itemize}
+%	\end{theorem}
+%\end{frame}
+%
+%\begin{frame}{Allgemeine harmonische Reihe}
+%	\begin{theorem}
+%		Die \textbf{allgemeine harmonische Reihe} mit $\alpha \in \mathbb{R}$
+%		\[
+%			\sum\limits_{k=1}^{\infty} \frac{1}{k^{\alpha}} 
+%		\begin{cases}
+%		  	\text{divergiert für } \alpha \leq 1 \\
+%			\text{konvergiert für }  \alpha > 1
+%		\end{cases}
+%		\]
+%	\end{theorem}
+%	\begin{proof}[Beweis]
+%		\scriptsize{
+%		Die Reihe $\sum\limits_{k=1}^{\infty} \frac{1}{k}$ divergiert, denn
+%		\begin{align*}
+%		s_n & = \overset{s_{2^{k+1}}}{\overbrace{1 + \frac{1}{2} + \underset{\geq 2 \cdot \frac{1}{4}}{\underbrace{\frac{1}{3} + \frac{1}{4}}} +\underset{\geq 4 \cdot \frac{1}{8}}{\underbrace{\frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \frac{1}{8}}} + \ldots + \underset{\geq 2^{k} \cdot \frac{1}{2^{k+1}}}{\underbrace{\left( \frac{1}{2^{k} + 1} + \ldots + \frac{1}{2^{k + 1}} \right)}}  } + \ldots + \frac{1}{n} } \\
+%		& \geq 1+ \frac{1}{2}  + 2\cdot \frac{1}{4} + 4 \cdot \frac{1}{8} + \ldots + 2^{k} \cdot \frac{1}{2^{k+1}} \geq \frac{3}{2} + k \frac{1}{2} = \frac{k+3}{2}
+%		\end{align*}
+%		Also gilt für alle $k  \in \mathbb{N}$, dass $s_{2^{k+1}} \geq \frac{k+3}{2} \stackrel{k \to \infty}{\to} + \infty$
+%	}
+%	\end{proof}
+%\end{frame}
+%
+%\begin{frame}{Fortsetzung des Beweises}
+%	\begin{proof}[Beweis]
+%	\tiny{Die Divergenz der Reihe für $\alpha \leq 1$ ist damit klar, da die harmonische Reihe, deren Divergenz gerade gezeigt wurde, eine divergente Minorante ist.
+%	
+%	Für $\alpha > 1$ gilt:
+%	\begin{align*}
+%	& s_{2^{k}-1}  = 1 + \left( \frac{1}{2^{\alpha}}  +
+%	\frac{1}{3^{\alpha}} \right) + \left( \frac{1}{4^{\alpha}} + \frac{1}{5^{\alpha}} + \frac{1}{6^{\alpha}} + \frac{1}{7^{\alpha}} +  \right) + \ldots + \left( \frac{1}{(2^{k-1})^{\alpha}} + \ldots + \frac{1}{(2^{k}-1)^{\alpha}} \right) \\
+%	& \leq 1 + \frac{2}{2^{\alpha}} + \frac{4}{4^{\alpha}} + \ldots + \frac{2^{k-1}}{(2^{k-1})^{\alpha}} = \sum\limits_{i=0}^{k-1}\left( \frac{1}{2^{\alpha - 1}} \right)^{i} = \sum\limits_{i=0}^{k-1} q^{i} \text{ mit } q=\frac{1}{2^{\alpha - 1}} 
+%	\end{align*}}
+%	Für $\alpha > 1$ ist $q<1$ und damit konvergiert die letzte Reihe und ist eine konvergente Majorante für die allgemeine harmonische Reihe mit $\alpha > 1$.
+%	\end{proof}
+%\end{frame}
+%
+%\begin{frame}{Beispiele}
+%	\begin{itemize}
+%		\item Die Reihe $\sum\limits_{i=0}^{\infty} \frac{k^2 +7}{5 k^2 +1 }$ divergiert, da $\frac{k^2 +7}{5 k^2 +1 } \to \frac{1}{5}$ keine Nullfolge ist.
+%		\item Die Reihe $\sum\limits_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}$ konvergiert nach dem Leibnizkriterium, weil $\frac{1}{k}$ eine monoton fallende Nullfolge ist.
+%		\item Die Reihe $\sum\limits_{k=1}^{\infty} \frac{1}{k^2 -k +1}$ konvergiert, da wegen
+%		\[
+%			k^2 -k + 1 = (k-1)^2 + k \geq (k-1)^2 \stackrel{k\geq 2}{\Rightarrow} \frac{1}{k^2 -k +1} \leq \frac{1}{(k-1)^2}
+%		\] 
+%		und wegen der Konvergenz der Reihe $\sum\limits_{k=1}^{\infty} \frac{1}{(k-1)^2}$ eine konvergente Majorante existiert.
+%		\item Die Reihe $\sum\limits_{k=0}^{\infty} \frac{2^k}{k!}$ konvergiert wegen des Quotientenkriteriums:
+%		\[
+%			r = \lim_{k \to \infty} \left| \frac{a_{k+1}}{a_{k}} \right| = \lim_{k \to \infty}\left| \frac{2^{k+1}}{(k+1)!} \frac{k!}{2^k} \right| = \lim_{k \to \infty} \frac{2}{k+1} = 0 < 1
+%		\]
+%	\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Beispiele}
+%	\begin{itemize}
+%		\item Die Reihe $\sum\limits_{k=1}^{\infty} \left( \frac{1}{3} - \frac{1}{\sqrt{k}}\right)^{k}$ konvergiert nach dem Wurzelkriterium:
+%		\[
+%			r = \lim_{k \to \infty} \sqrt[k]{\left| \left( \frac{1}{3} - \frac{1}{\sqrt{k}} \right)^{k} \right|} = \lim_{k \to \infty} \left| \frac{1}{3} - \frac{1}{\sqrt{k}} \right| = \frac{1}{3} < 1
+%		\]
+%		\item Die harmonische Reihe $ \sum\limits_{k=1}^{\infty} \frac{1}{k}$ divergiert bekanntlich, für das Quotientenkriterium gilt:
+%		\[
+%			r = \lim_{k \to \infty} \frac{1}{k+1} k = 1
+%		\]
+%		\item Die Reihe $ \sum\limits_{k=1}^{\infty} \frac{1}{k^2}$ konvergiert bekanntlich, für das Quotientenkriterium gilt:
+%		\[
+%		r = \lim_{k \to \infty} \frac{1}{(k+1)^2} k^2 = 1
+%		\] 
+%	\end{itemize}
+%\end{frame}
+%

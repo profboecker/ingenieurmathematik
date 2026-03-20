@@ -1,0 +1,35 @@
+\documentclass[10pt]{article}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+xmin=-0.21528674052269323,
+xmax=4.433343356588088,
+ymin=-0.05274109590516137,
+ymax=4.281586857235209,
+xtick={0,0.5,...,4},
+ytick={0,0.5,...,4},]
+\clip(-0.21528674052269323,-0.05274109590516137) rectangle (4.433343356588088,4.281586857235209);
+\draw [shift={(0,0)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0:0.5069389418877623) arc (0:53.13010235415598:0.5069389418877623) -- cycle;
+\draw [shift={(0,0)},->,line width=0.8pt,color=qqwuqq] (0:0.5069389418877623) arc (0:53.13010235415598:0.5069389418877623);
+\draw [line width=2pt] (0,0)-- (3,4);
+\begin{scriptsize}
+\draw [fill=ududff] (3,4) circle (1pt);
+\draw[color=ududff] (3.454951198744706,4.1649909006010235) node {$z_1 = 3 + 4¯$};
+\draw[color=qqwuqq] (0.9405340469814049,0.22354062742366923) node {$\alpha = 0.93 rad$};
+\draw [fill=uuuuuu] (0,0) circle (2pt);
+\draw[color=uuuuuu] (0.05846028809669841,0.15256917555938249) node {$A$};
+\draw[color=black] (1.6857342915564155,2.068798375895125) node {|z|};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

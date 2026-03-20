@@ -1,0 +1,48 @@
+45 Patch Control
+
+0
+0
+1
+mathematik.tex
+10
+5
+0
+
+mathematik.tex
+TeX:DE:UNIX:UTF-8
+420589563 0 -1 5048 -1 5048 0 0 1946 1106 0 1 323 336 -1 -1 0 0 33 -1 -1 33 1 0 5048 -1  0 -1 0
+mathe1_zahlen.tex
+TeX:UNIX
+1158395 0 -1 18 -1 12336 114 114 1113 1159 1 1 136 960 -1 -1 0 0 17 -1 -1 17 1 0 12336 -1  0 -1 0
+mathe2_differentialrechnung.tex
+TeX:UNIX
+1158395 1 -1 3250 -1 3970 76 76 2927 1239 1 1 125 936 -1 -1 0 0 30 -1 -1 30 1 0 3970 -1  0 -1 0
+mathe2_integralrechnung.tex
+TeX:UNIX
+1158395 0 -1 0 -1 0 152 152 3075 1210 1 1 125 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 -1 0
+mathematik.bib
+BibTeX:UNIX
+1147890 0 0 1 0 1 114 114 2494 1192 0 1 48 0 -1 -1 0 0 60 0 0 60 1 0 1 0  0 -1 0
+mathe2_funktionen.tex
+TeX:UNIX
+269593851 1 -1 4073 -1 4230 152 152 2999 1311 1 1 125 -7440 -1 -1 0 0 44 -1 -1 44 1 0 4230 -1  0 -1 0
+mathe1_finanzmathematik.tex
+TeX:UNIX
+269593851 1 -1 7380 -1 7602 76 76 2927 1239 1 1 213 -336 -1 -1 0 0 29 -1 -1 29 1 0 7602 -1  0 -1 0
+mathe2_organisatorisches.tex
+TeX:UNIX
+1159163 0 -1 0 -1 1074 61 61 2669 995 0 1 1027 648 -1 -1 0 0 20 -1 -1 20 1 0 1074 -1  0 -1 0
+mathe1_linearealgebra.tex
+TeX:UNIX
+269594619 2 -1 79151 -1 79152 152 152 1399 563 0 1 906 984 -1 -1 0 0 39 -1 -1 39 1 0 79152 -1  0 -1 0
+mathe1_folgen_und_reihen.tex
+TeX:UNIX
+1159163 0 -1 0 -1 0 114 114 1361 525 0 1 49 0 -1 -1 0 0 38 -1 -1 38 1 0 0 -1  0 -1 0
+
+*mathematik.tex
+>
+*mathematik
+*mathe1_zahlen.tex
+*mathe2_differentialrechnung.tex
+*mathe2_integralrechnung.tex
+<

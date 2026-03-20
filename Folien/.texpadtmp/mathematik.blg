@@ -1,0 +1,15 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is '/Users/stefan/sciebo - Böcker, Stefan (sboecker@fh-swf.de)@fh-swf.sciebo.de/Mathematik/EigeneVorlesung/Folien/.texpadtmp/mathematik.blg'
+[24] biber-darwin:340> INFO - === Tue Mar 25, 2025, 20:32:09
+[93] Biber.pm:420> INFO - Reading '/Users/stefan/sciebo - Böcker, Stefan (sboecker@fh-swf.de)@fh-swf.sciebo.de/Mathematik/EigeneVorlesung/Folien/.texpadtmp/mathematik.bcf'
+[119] Biber.pm:994> INFO - Found 5 citekeys in bib section 0
+[124] Biber.pm:4463> INFO - Processing section 0
+[128] Biber.pm:4654> INFO - Looking for bibtex file '/Users/stefan/sciebo - Böcker, Stefan (sboecker@fh-swf.de)@fh-swf.sciebo.de/Mathematik/EigeneVorlesung/Folien/mathematik.bib' for section 0
+[129] bibtex.pm:1713> INFO - LaTeX decoding ...
+[131] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/stefan/sciebo - Böcker, Stefan (sboecker@fh-swf.de)@fh-swf.sciebo.de/Mathematik/EigeneVorlesung/Folien/mathematik.bib'
+[152] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[153] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[153] Biber.pm:4283> INFO - Sorting list 'anyt/global//global/global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[153] Biber.pm:4289> INFO - No sort tailoring available for locale 'de-DE'
+[154] bbl.pm:676> INFO - Writing '/Users/stefan/sciebo - BoÌcker, Stefan (sboecker@fh-swf.de)@fh-swf.sciebo.de/Mathematik/EigeneVorlesung/Folien/.texpadtmp/mathematik.bbl' with encoding 'UTF-8'
+[155] bbl.pm:779> INFO - Output to /Users/stefan/sciebo - BoÌcker, Stefan (sboecker@fh-swf.de)@fh-swf.sciebo.de/Mathematik/EigeneVorlesung/Folien/.texpadtmp/mathematik.bbl

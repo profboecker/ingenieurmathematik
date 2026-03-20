@@ -1,0 +1,39 @@
+\documentclass[margin=5mm, tikz]{standalone}
+\usepackage[ngerman]{babel}
+\usepackage{tikz}
+\usepackage{amsmath, amssymb}
+%=========
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+	\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+	\definecolor{qqqqff}{rgb}{0.,0.,1.}
+	\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw[->,color=black] (-2.18,0.) -- (9.286666666666669,0.);
+	\foreach \x in {-2.,-1.,1.,2.,3.,4.,5.,6.,7.,8.,9.}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0.,-3.6866666666666705) -- (0.,4.94);
+	\foreach \y in {-3.,-2.,-1.,1.,2.,3.,4.}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-2.18,-3.6866666666666705) rectangle (9.286666666666669,4.94);
+	\draw [ultra thick, ->] (0.,0.) -- (2.,4.);
+	\draw [ultra thick, ->] (2.,0.) -- (4.,4.);
+	\begin{scriptsize}
+	\draw [fill=uuuuuu] (0.,0.) circle (1.5pt);
+	\draw[color=uuuuuu] (0.1,0.19333333333333036) node {$O$};
+	\draw [fill=qqqqff] (2.,4.) circle (1.5pt);
+	\draw[color=qqqqff] (2.1,4.193333333333331) node {$A$};
+	\draw [fill=xdxdff] (2.,0.) circle (1.5pt);
+	\draw[color=xdxdff] (2.1,0.19333333333333036) node {$B$};
+	\draw [fill=qqqqff] (4.,4.) circle (1.5pt);
+	\draw[color=qqqqff] (4.1,4.193333333333331) node {$C$};
+	\draw[color=black] (2.0,2.14) node {\large $\vec{u}=\begin{pmatrix} 2 \\ 4 \end{pmatrix}$};
+	\draw[color=black] (4.5,2.14) node {\large $\vec{v}=\begin{pmatrix} 2 \\ 4 \end{pmatrix} = \vec{u}$};
+	\end{scriptsize}
+	\end{tikzpicture}
+\end{document}
+%=========

@@ -1,0 +1,411 @@
+%\section{Zahlen}
+%\subsection{Maschinenzahlen}
+%\begin{block}{Maschinenzahlen}
+%\textbf{Maschinenzahlen} sind Zahlen, die in einem Computer gespeichert sind.
+%
+%Aufgrund eines nur endlichen Speichers können auf einem Rechner auch nur endlich viele Zahlen mit nur endlicher Genauigkeit dargestellt werden	. Dadurch entstehen bei der Speicherung von reellen Zahlen \textit{Rundungsfehler}, die das Ergebnis teilweise stark verfälschen oder sogar unbrauchbar machen können.
+%
+%Die Speicherung von Maschinenzahlen ist genormt, z.B. durch die Norm IEEE 754.
+%\end{block}
+%\begin{frame}{b-adische Zahlen}
+%	\begin{block}{b-adische Zahlen}
+%		Ist $b > 1 $ eine natürliche Zahl, so kann man jede reelle Zahl $x$ in einer \textbf{b-adischen Zifferndarstellung} angeben:
+%		$$
+%			x = a_{k} b^{k} + a_{k-1} b^{k-1} + \cdots + a_{1} b + a_{0} + a_{-1} b^{-1} + a_{-2} b^{-2} + \cdots
+%		$$
+%		mit $a_{i} \in \{ 0, 1, \ldots, b-1 \}$. Die $a_{i}$ heißen \textbf{Ziffern}, das $b$ heißt \textbf{Basis}.
+%		
+%		Verkürzt schreibt man oft:
+%		$$
+%			x = (a_{k} a_{k-1} \ldots a_{1} a_{0}, a_{-1} a_{-2}\ldots )_{b}
+%		$$
+%	\end{block}
+%\footnotesize{	\begin{exampleblock}{Beispiele}
+%		Für die Basis $b=10$ erhält man die übliche Zahldarstellung (Dezimaldarstellung), denn z.B. ist
+%		$$
+%			2018 = 2 \cdot 10^{3} + 0 \cdot 10^{2} + 1 \cdot 10 + 8 \cdot 10^{0}
+%		$$
+%		und 
+%		$$
+%			12,25 = 1 \cdot 10 + 2 + \frac{2}{10} + \frac{5}{100} =1 \cdot 10 + 2 \cdot 10^{0} + 2 \cdot 10^{-1} + 5 \cdot 10^{-2} 
+%		$$	
+%	\end{exampleblock}}
+%\end{frame}
+%\begin{frame}{Umrechnung b-adischer Zahlen in das Dezimalsystem}
+%\footnotesize{	\begin{exampleblock}{Umrechnung b-adischer Zahlen in Dezimalzahlen}
+%		Für die Umrechnung b-adischer Zahlen in das uns übliche Dezimalsystem rechnet man einfach mit der Definition der b-adischen Zahl, also z.B. für die \textbf{Binärzahl}
+%		\begin{eqnarray*}
+%			10010101_{2} & = & 1 \cdot 2^{7} + 0 \cdot 2^{6} + 0 \cdot 2^{5} + 1 \cdot 2^{4} + 0 \cdot 2^{3} + 1 \cdot 2^{2} + 0 \cdot 2^{1} + 1 \cdot 2^{0} \\ & = & 128 + 16 + 4 + 1 \\ & = & 149_{10}
+%		\end{eqnarray*}
+%		oder für die 7-adische Zahl
+%		\begin{eqnarray*}
+%			1234_{7} & = & 1 \cdot 7^{3} +  2 \cdot 7^{2} + 3 \cdot 7^{1} + 4 \cdot 7^{0} \\ & = & 343 + 98 + 21 + 4 \\ & = & 466_{10}
+%		\end{eqnarray*}
+%	\end{exampleblock}}
+%\end{frame}
+%\begin{frame}{Hexadezimalzahlen}
+%	\begin{block}{Hexadezimalzahlen und andere b-adische Zahlen mit Basis $b>10$}
+%		Für Zahldarstellungen mit einer Basis $b>10$ reichen unsere gewöhnlichen Ziffern nicht aus und man bedient sich im gewöhnlichen Alphabet (A-Z) weiterer Ziffern, z.B. ist
+%		$$
+%			A \equiv 10 \qquad B \equiv 11 \qquad C \equiv 12 \ldots \text{usw.}
+%		$$ 
+%		Damit ist z.B. die \textbf{Hexadezimalzahl}\footnote{hexa bedeutet sechs, hexadezimal bedeutet daher Basis 16}
+%		\begin{eqnarray*}
+%			ABBA_{16} & = & 10 \cdot 16^{3} +  11 \cdot 16^{2} + 11 \cdot 16^{1} + 10 \cdot 16^{0} \\ & = & 40960 + 2816 + 176 + 10 \\ & = & 43962_{10}
+%		\end{eqnarray*}
+%	\end{block}
+%\end{frame}
+%\begin{frame}{Umrechnung von Dezimalzahlen in b-adische Zahlen}
+%	Für die Umrechnung vom Dezimal in ein anderes b-adisches Zahlensystem ist es nützlich, zwei Rechenoperationen zu verwenden:
+%	\begin{block}{Ganzzahlige Division}
+%		Für zwei ganze Zahlen $m$ und $n$ ist die \textbf{ganzzahlige Division} von $m$ durch $n$ definiert als die größte ganze Zahl, mit der $n$ multipliziert gerade noch kleiner oder gleich $m$ ist\footnote{Für positive ganze Zahlen ist das einfach die Zahl $\frac{m}{n}$ ohne Nachkommastellen.}
+%
+%		$$
+%			m / n := \max \left\{ k \in \mathbb{Z} : k \cdot n \leq m \right\}
+%		$$
+%	\end{block}
+%	\begin{block}{Modulo-Operation / Division mit Rest}
+%		Für zwei ganze Zahlen $m$ und $n$ ist die Modulo-Operation $\%$ definiert als der Rest, der bei der ganzzahligen Division von $m$ durch $n$ bleibt.
+%		$$
+%		m \% n := \left( \frac{m}{n} - m / n \right) \cdot n
+%		$$
+%	\end{block}
+%\end{frame}
+%\begin{frame}{Beispiele}
+%	\begin{exampleblock}{Beispiele für ganzzahlige Division und Modulo-Rechnen}
+%		\begin{eqnarray*}
+%			15 / 2 & = &  7 \\
+%			15 \% 2 & =&  1 \\
+%			2018 / 11 & =& 183 \\
+%			2018 \% 11 &=& 5 \text{ weil } 183 \cdot 11 = 2013 \text{ ist.} \\
+%			\text{Aber: }-2018 / 11 & = & -184
+%		\end{eqnarray*}
+%	\end{exampleblock}
+%\end{frame}
+%\begin{frame}{Umrechnung von Dezimalzahlen in b-adische Zahlen}
+%	Für die Umrechnung einer positiven ganzen Zahl $x$ in die eine andere b-adische Zahldarstellung kann man das folgende Verfahren anwenden:
+%	\begin{enumerate}
+%		\item Erstelle eine Tabelle mit den Spalten $x$, $x / b$ und $x \% b$.
+%		\item Setze in der ersten Zeile jeder Spalte jeweils den Wert der für $x$ zu berechnenden Zahl ein, also $x$, $x / b$ und $x \% b$.
+%		\item Setze dann in jede weitere Zeile als neuen Wert in der $x$-Spalte den Wert der $x / 2$-Spalte der vorherigen Zeile ein, wenn dieser echt größer als 0 ist und fahre erneut für den Rest der Zeile wie in Schritt 2 fort; ansonsten endet das Verfahren.\footnote{Das Verfahren endet also, wenn in der mittleren Spalte eine 0 auftaucht.}
+%	\end{enumerate}
+%	Die b-adische Darstellung der Dezimalzahl $x$ ergibt sich dann, indem man die Ziffern der letzten Spalte ($x\%b$) von unten nach oben aneinanderreiht.
+%\end{frame}
+%
+%\begin{frame}{Beispiel für die Umrechnung von Dezimal- in Binärarstellung}
+%	Die Dezimalzahl $138_{10}$ rechnet man in eine Binärdarstellung (b=2) wir folgt um:
+%\begin{center}
+%	\begin{tabular}{|c|c|c|}
+%	\hline
+%  $x$& $x/2$ & $x \% 2$ \\
+%  \hline
+%  138 & 69 & 0 \\
+%  69 & 34 & 1 \\
+%  34 & 17 & 0 \\
+%  17 & 8 & 1 \\
+%  8 & 4 & 0 \\
+%  4 & 2 & 0 \\
+%  2 & 1 & 0 \\
+%  1 & 0 & 1 \\ 
+%  \hline
+%\end{tabular}
+%\end{center}	
+%
+%Die Dezimalzahl 138 hat also die Binärdarstellung 
+%$$
+%	10001010_{2} = 1 \cdot 128 + 1 \cdot 8 + 1 \cdot 2 = 138_{10}
+%$$
+%\end{frame}
+%
+%
+%\begin{frame}{Beispiel für die Umrechnung von Dezimal- in 7-adische Darstellung}
+%	Die Dezimalzahl $138_{10}$ rechnet man in eine 7-adische Darstellung (b=7) wir folgt um:
+%\begin{center}
+%	\begin{tabular}{|c|c|c|}
+%	\hline
+%  $x$& $x/7$ & $x \% 7$ \\
+%  \hline
+%  138 & 19 & 5 \\
+%  19 & 2 & 5 \\
+%  2 & 0 & 2 \\
+%  \hline
+%\end{tabular}
+%\end{center}	
+%
+%Die Dezimalzahl 138 hat also die 7-adische Darstellung 
+%$$
+%	255_{7} = 2 \cdot 49 + 5 \cdot 7 + 5 = 98 + 35 + 5 = 138_{10}
+%$$
+%\end{frame}
+%\begin{frame}{Umrechnung von positiven, reellen Zahlen < 1 in b-adische Darstellung}
+%	Für die Umrechnung einer positiven, reellen Zahl $x<1$ in die eine andere b-adische Zahldarstellung kann man das folgende Verfahren anwenden:\footnote{$\lfloor x \rfloor$ bezeichnet die \textbf{Gaußklammer} von $x$, d.h. $\lfloor x \rfloor := \max \{ z \in \mathbb{Z}: z\leq x \}$}
+%	\begin{enumerate}
+%		\item Erstelle eine Tabelle mit den Spalten $x-\lfloor x \rfloor $, $2x$ und $\lfloor 2x \rfloor $.
+%		\item Setze in der ersten Zeile jeder Spalte jeweils den Wert der für $x$ zu berechnenden Zahl ein, also $x-\lfloor x \rfloor $, $2x$ und $\lfloor 2x \rfloor $.
+%		\item Setze dann in jede weitere Zeile als neuen Wert in der  ersten Spalte den Wert der zweiten ($2x$)-Spalte abzüglich der dritten ($\lfloor 2x \rfloor $) Spalte der vorherigen Zeile ein, wenn dieser echt größer als 0 ist und fahre erneut für den Rest der Zeile wie in Schritt 2 fort; ansonsten endet das Verfahren.
+%	\end{enumerate}
+%	Die b-adische Darstellung der Dezimalzahl $x$ ergibt sich dann, indem man die Ziffern der letzten Spalte \textbf{von oben nach unten} hinter einem $0,$ aneinanderreiht.
+%
+%\end{frame}
+%\begin{frame}{Beispiel für die Umrechnung von Dezimal- in Binärarstellung}
+%	Die Dezimalzahl $0,25_{10}$ rechnet man in eine Binärdarstellung (b=2) wir folgt um:
+%\begin{center}
+%	\begin{tabular}{|c|c|c|}
+%	\hline
+%  $x-\lfloor x \rfloor$& $2x$ & $\lfloor 2x \rfloor $ \\
+%  \hline
+%  0,25 & 0,5 & 0 \\
+%  0,5 = 0,5 - 0 & 1 & 1 \\
+%  0 = 1-1 &  &  \\
+%  \hline
+%\end{tabular}
+%\end{center}	
+%
+%Die Dezimalzahl 0,25 hat also die Binärdarstellung 
+%$$
+%	0,010_{2} = 0 \cdot 2^{-1} + 1 \cdot 2^{-2} + 0 \cdot 2^{-3} = 0,25_{10}
+%$$
+%\end{frame}
+%\begin{frame}{Beispiel für die Umrechnung von Dezimal- in 7-adische Darstellung}
+%	Die Dezimalzahl $0,25_{10}$ rechnet man in eine 7-adische Darstellung (b=7) wir folgt um:
+%\begin{center}
+%	\begin{tabular}{|c|c|c|}
+%	\hline
+%  $x-\lfloor x \rfloor$& $7x$ & $\lfloor 7x \rfloor $ \\
+%  \hline
+%  0,25 & 1,75 & 1 \\
+%  0,75 = 1,75 - 1 & 5,25 & 5 \\
+%  0,25 = 5,25-5 & 1,75 & 1 \\
+%  0,75 = 1,75 - 1 & 5,25 & 5 \\
+%  0,25 = 5,25-5 & 1,75 & 1 \\
+%  0,75 = 1,75 - 1 & 5,25 & 5 \\
+%  0,25 = 5,25-5 & 1,75 & 1 \\
+%  \vdots & \vdots & \vdots \\
+%  \hline
+%\end{tabular}
+%\end{center}	
+%
+%Die Dezimalzahl 0,25 hat also die 7-adische Darstellung 
+%$$
+%	0,\overline{15}_{7} = 0,151515151\ldots_{7} = 1 \cdot 7^{-1} + 5 \cdot 7^{-2} + 1 \cdot 7^{-3} \ldots = 0,25_{10}
+%$$
+%\end{frame}
+%\begin{frame}{Umrechnung beliebiger Zahlen vom Dezimal in ein b-adisches System}
+%	\begin{block}{Umrechnung beliebiger Zahlen von Dezimal in b-adische Darstellung}
+%		Um eine beliebige Zahl $x\in \mathbb{R}$  von Dezimaldarstellung in eine andere b-adische Darstellung umzurechnen, geht man wie folgt vor:
+%		\begin{enumerate}
+%			\item Falls $x<0$ ist, betrachte $|x|$, vergesse also für den Moment das negative Vorzeichen.
+%			\item Falls $|x|$ auch Nachkommastellen hat, betrachte den Teil vor dem Komma ($\lfloor |x| \rfloor$) und den Teil nach dem Komma ($|x| - \lfloor |x| \rfloor$) getrennt.
+%			\item Berechne für beide Teile die b-adische Darstellung nach dem entsprechenden obigen Verfahren
+%			\item Setze die beiden Teile zusammen und füge das evtl. vorhandene Vorzeichen hinzu.
+%		\end{enumerate}
+%	\end{block}
+%\end{frame}
+%\begin{frame}{Gleitpunktzahlen}
+%	\begin{block}{Gleitpunktzahlen}
+%		Sei $b\in \mathbb{N}$ mit $b\geq 2$ eine ansonsten beliebige natürliche Zahl. Für ein $t \in \mathbb{N}$ ist eine t-stellige \textbf{Gleitpunktzahl} eine Zahl der Form
+%		$$
+%			s\frac{m}{b^{t}}b^{e} = \pm 0,a_{1}a_{2}a_{3}\ldots a_{t} \cdot b^{e} \qquad \text{ mit } a_{i} \in \{ 0, 1, \ldots , b-1 \} 
+%		$$
+%		Dabei heißen
+%		\begin{itemize}
+%			\item $s \in {-1, +1}$ das \textbf{Vorzeichen}
+%			\item $b$ die \textbf{Basis} (typischerweise ist $b=2$)
+%			\item $t \in \mathbb{N}$ die \textbf{Genauigkeit} bzw. \textbf{Anzahl der signifikanten Stellen}
+%			\item $e \in \mathbb{Z}$ der \textbf{Exponent}
+%			\item $m \in \mathbb{N}$ die \textbf{Mantisse}, $1 \leq m \leq b^{t}-1$
+%		\end{itemize}	
+%		Eine Gleitpunktzahl $\neq 0 $ heißt \textbf{normalisiert}, wenn $b^{t-1}\leq m \leq b^{t}-1$, also $a_{1}\neq 0 $ ist. Auch die 0 nennt man normalisiert.
+%	\end{block}
+%\end{frame}
+%\begin{frame}{Maschinenzahlen}
+%\begin{block}{Gleitpunktzahlen}
+%	Für normalisierte Gleitpunktzahlen schreiben wir
+%	$$
+%		\mathbb{G}_{b,t} := \left\{ x \in \mathbb{R} : x \text{ ist }t\text{-stellige Gleitpunktzahl zur Basis } b \right\}
+%	$$
+%\end{block}
+%	\begin{block}{Maschinenzahlen}
+%		Seien $b, t, e_{\text{min}, e_{\text{max}}} \in \mathbb{Z}$ mit $b\geq 2, t \geq 1$.
+%		Dann ist die Menge der \textbf{Maschinenzahlen}
+%		$$
+%			\mathbb{M}_{b,t,e_{\text{min}}, e_{\text{max}}} := \left\{ x \in \mathbb{G}_{b,t} : e_{\text{min}} \leq e \leq e_{\text{max}}\right\} \cup \{ \pm \infty, \text{NaN} \}
+%		$$
+%		Hierbei steht NaN für \glqq not a number\grqq , das ist ein undefinierter oder nicht darstellbarer Wert wie z.B. $\frac{0}{0}$ oder $\frac{\infty}{\infty}$.
+%	\end{block}
+%\end{frame}
+%\begin{frame}{Beispiel für Maschinenzahlen}
+%	Die positiven Maschinenzahlen für $t=1$ und $b=10$ mit $e_{\text{min}}=-2$ und $e_{\text{max}}=2$ sind:
+%\begin{center}
+%		\begin{tabular}{|ccccc|}
+%		\hline 
+%		0,0010 & 0,0100 & 0,1000 & 1,0000 & 10,0000 \\
+%		0,0020 & 0,0200 & 0,2000 & 2,0000 & 20,0000 \\
+%		0,0030 & 0,0300 & 0,3000 & 3,0000 & 30,0000 \\
+%		0,0040 & 0,0400 & 0,4000 & 4,0000 & 40,0000 \\
+%		0,0050 & 0,0500 & 0,5000 & 5,0000 & 50,0000 \\
+%		0,0060 & 0,0600 & 0,6000 & 6,0000 & 60,0000 \\
+%		0,0070 & 0,0700 & 0,7000 & 7,0000 & 70,0000 \\
+%		0,0080 & 0,0800 & 0,8000 & 8,0000 & 80,0000 \\
+%		0,0090 & 0,0900 & 0,9000 & 9,0000 & 90,0000 \\
+%		\hline
+%	\end{tabular}
+%\end{center}
+%
+%Die Anzahl der normalisierten Maschinenzahlen zur Genauigkeit $t$, Basis $b$ und Anzahl der Exponenten $a := e_{\text{max}} - e_{\text{min}} + 1$ ist
+%$$
+%2 \cdot (b-1) \cdot b^{t-1} \cdot a +1
+%$$
+%\end{frame}
+\section{Komplexe Zahlen}
+\begin{frame}{Reelle Zahlen haben ein(!) Problem}
+	Die Zahlenmengen $\mathbb{N} \subseteq \mathbb{N}_{0} \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R}$ kennen Sie aus der Schule.
+	
+	Die \glqq größte\grqq\, Menge ist dabei die Menge $\mathbb{R}$ der reellen Zahlen, aber selbst die ist nicht groß genug, um eine Lösung der Gleichung
+	$$
+	x^{2} + 1 = 0 \qquad \Leftrightarrow \qquad x^{2} = -1
+	$$ 
+	zu enthalten, denn das Quadrat jeder reellen Zahl ist positiv.
+	
+	Wir werden im Folgenden eine Zahlenmenge konstruieren, die auch Lösungen der Gleichung $x^{2}+1=0$ und alle reelen Zahlen enthält.
+\end{frame}
+\begin{frame}{Eigenschaften eines Zahlkörpers}
+	Für jede \glqq vernünftige\grqq\, Menge von Zahlen, die mindestens soviel kann, wie die reellen Zahlen, sollte folgendes gelten:
+\footnotesize{	\begin{block}{Körperaxiome}
+		Eine Menge $\mathbb{M}$ (von Zahlen) mit den Verknüpfungen $+$ und $\cdot$ heißt (Zahl-)Körper, wenn folgende Rechenregeln für alle $a, b, c \in \mathbb{M}$ gelten:
+		\begin{itemize}
+			\item \textbf{Assoziativgesetz:} $(a+b) + c = a + ( b + c)$ und $(a\cdot b)\cdot c = a\cdot (b\cdot c)$
+			\item \textbf{Kommutativgesetz:} $a+b = b+a$ und $a\cdot b = b \cdot a$
+			\item \textbf{Distributivgesetz:} $(a+b)\cdot c = a\cdot c + b \cdot c$
+			\item Existenz eines \textbf{Einselementes:} Es gibt eine Zahl $e \in \mathbb{M}$ mit $e \cdot a = a$ für alle $a\in \mathbb{M}$ (meistens heißt diese Zahl 1)
+			\item Existenz eines \textbf{Nullelementes:} Es gibt eine Zahl $n \in \mathbb{M}$ mit $n + a = a$ für alle $a\in \mathbb{M}$ (meistens heißt diese Zahl 0)
+			\item Es gibt \textbf{inverse Elemente:} Zu jeder Zahl $a\neq n$ gibt es eine Zahl $b = a^{-1}$ mit $a\cdot b = a \cdot a^{-1} = e$
+			\item Es gibt \textbf{entgegengesetzte Elemente:} Zu jeder Zahl $a$ gibt es eine Zahl $b = -a$ mit $a + b = a + (-a) = n$
+		\end{itemize} 
+	\end{block}}
+\end{frame}
+\begin{frame}{Konstruktion der komplexen Zahlen $\mathbb{C}$}
+	Die reellen Zahlen $\mathbb{R}$ mit der üblichen Addition $+$ und der Multiplikation $\cdot$ bilden einen solchen Körper.
+	
+	Um nun die Lösbarkeit der Gleichung $x^{2}+1=0$ 	sicherzustellen, führen wir die Lösung einfach als \glqq neue\grqq\, Zahl\footnote{In den meisten Mathematikbüchern heißt die Zahl $i$, in den meisten Ingenieurbüchern heißt sie, wie hier, $j$} ein:
+	$$
+		j \text{ sei die (neue) Zahl, für die gilt: } j^2 = -1
+	$$
+	Zusammen mit den reellen Zahlen und den dort üblichen Rechenoperationen reeller Zahlen muss dann auch jede Zahl der Form
+	$$
+		a + b \cdot j \text{ mit } a, b \in \mathbb{R}
+	$$
+	dazugehören. $j$ heißt \textbf{imaginäre Einheit}.
+\end{frame}
+\begin{frame}{Definition der komplexen Zahlen}
+	\begin{block}{Körper der komplexen Zahlen $\mathbb{C}$}
+		Die Menge der Zahlen
+		$$
+			\mathbb{C} := \left\{ z = a+b\cdot j : a, b \in \mathbb{R}\right\}
+		$$
+		mit von den reellen Zahlen übertragenen Rechenoperationen $+$ und $\cdot$ heißt Körper der \textbf{komplexen Zahlen}.
+		Die Zahl $j$ mit $j^{2} = -1$ heißt \textbf{imaginäre Einheit}.
+ 	\end{block}
+\end{frame}
+\begin{frame}{Rechnen mit komplexen Zahlen}
+	Man kann mit komplexen Zahlen genauso rechnen wie mit reellen Zahlen:
+	
+	Für zwei komplexe Zahlen $z_{1} = a+bj$ und $z_{2}=c+dj$ gilt:
+	\begin{itemize}
+		\item \textbf{Produkt:} $z_{1} \cdot z_{2} = \left(a+bj \right) \cdot \left( c+dj\right) = (ac -bd) + (ad+bc)j$
+		\item \textbf{Inverses:} $\frac{1}{z_{1}} = \frac{1}{a+bj} = \frac{a-bj}{(a+bj)(a-bj)} = \frac{a}{a^{2}+b^{2}} - \frac{b}{a^{2}+b^{2}}\cdot j$
+		\item $\text{Re}(z_{1}) = a$ und $\text{Re}(z_{2}) = c$ nennt man den \textbf{Realteil} von $z_{1}$ bzw. $z_{2}$
+		\item $\text{Im}(z_{1}) = b \in \mathbb{R}$ und $\text{Im}(z_{2}) = d \in \mathbb{R}$ nennt man den \textbf{Imaginärteil} von $z_{1}$ bzw. $z_{2}$
+		\item Zu $z=a+bj$ nennt man die Zahl $\overline{z} := a-bj$ die zu $z$ \textbf{(komplex-)konjugierte Zahl}.
+		\item Die reelle Zahl $|z| := z\cdot \overline{z} = a^{2} + b^{2}$ heißt der \textbf{Betrag} oder die \textbf{Länge} von $z=a+bj$.
+		\item Es gilt für $z=a+bj$:
+		$$
+			\text{Re}(z) = \frac{1}{2}(z+\overline{z}) \qquad \text{Im}(z) = \frac{1}{2j}(z-\overline{z})
+		$$
+	\end{itemize}
+\end{frame}
+\begin{frame}{Lösbarkeit von Gleichungen}
+	Wir wollten ja (nur), dass $x^{2}+1=0$ Lösung hat, faktisch hat die Gleichung nun aber sogar zwei Lösungen: $j$ und $-j$.
+	
+	Noch besser aber ist der folgende Satz:
+	\begin{block}{Fundamentalsatz der Algebra}
+		Jedes Polynom $p(x)=a_{n}x^{n} + a_{n-1} x^{n-1} + \cdots + a_{1}x + a_{0}$ vom Grad $n\geq 1$ mit komplexen Koeffizienten $a_{i} \in \mathbb{C}$ ist in Linearfaktoren zerlegbar, d.h. es gibt verschiedene komplexe Zahlen $z_{1}, z_{2}, \ldots ,z_{k}$ und natürliche Zahlen $n_{1} , \ldots , n_{k}$ mit
+		$$
+		p(x) = a_{n} (x-z_{1})^{n_{1}} \cdot (x-z_{2})^{n_{2}} \cdots (x-z_{k})^{n_{k}} 
+		$$ 	
+		Dabei sind die $z_{i}$ die \textbf{Nullstellen} von $p$ mit den \textbf{Vielfachheiten} $n_{i}$.
+	\end{block}
+	Übrigens: 
+	$$
+	x^{2} + 1 = (x-j)(x+j)
+	$$
+\end{frame}
+\begin{frame}{Darstellung komplexer Zahlen in der Gaußschen Zahlenebene}
+	Die grafische Darstellung der Menge der komplexen Zahlen in einem kartesischen Koordinatensystem bezeichnet man als \textbf{Gaußsche Zahlenebene}. Die horizontale Achse ist die reelle Achse, die vertikale Achse ist die imaginäre Achse:
+	
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]\draw[->,color=black] (-0.21528674052269323,0) -- (4.433343356588089,0);\foreach \x in {,0.5,1,1.5,2,2.5,3,3.5,4}\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};\draw[color=black] (4.058208539591145,0.0202775576755105) node [anchor=south west] { Re z};\draw[->,color=black] (0,-0.16426766312046795) -- (0,4.281586857235209);\foreach \y in {,0.5,1,1.5,2,2.5,3,3.5,4}\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};\draw[color=black] (0.025346947094388124,4.028117386291328) node [anchor=west] { Im z};\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};\clip(-0.21528674052269323,-0.16426766312046795) rectangle (4.433343356588089,4.281586857235209);\begin{scriptsize}\draw [fill=ududff] (3,4) circle (1pt);\draw[color=ududff] (3.4549511987447072,4.164990900601024) node {$z_1 = 3 + 4j$};\end{scriptsize}\end{tikzpicture}\end{frame}
+\begin{frame}{Darstellung komplexer Zahlen in der Gaußschen Zahlenebene}
+Für diese Darstellung einer komplexen Zahl gilt offenbar:
+$$
+z = |z| \left( \cos \varphi + j \sin \varphi \right) = |z| e^{j\varphi}
+$$
+Diese Darstellung nennt man \textbf{Polarform einer komplexen Zahl}.
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-0.21528674052269323,0.) -- (4.428273967169209,0.);
+\foreach \x in {,0.5,1.,1.5,2.,2.5,3.,3.5,4.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[color=black] (4.255914726927369,0.020277557675510503) node [anchor=south west] { Re z};
+\draw[->,color=black] (0.,-0.04767170648628433) -- (0.,4.281586857235209);
+\foreach \y in {,0.5,1.,1.5,2.,2.5,3.,3.5,4.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0.025346947094388107,4.170060290019901) node [anchor=west] { Im z};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-0.21528674052269323,-0.04767170648628433) rectangle (4.428273967169209,4.281586857235209);
+%\draw [shift={(0.,0.)},line width=0.8pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:0.5069389418877621) arc (0.:53.13010235415598:0.5069389418877621) -- cycle;
+\draw [shift={(0.,0.)},->,line width=0.8pt,color=qqwuqq] (0.:0.5069389418877621) arc (0.:53.13010235415598:0.5069389418877621);
+\draw [line width=1.pt] (0.,0.)-- (3.,4.);
+\begin{scriptsize}
+\draw [fill=ududff] (3.,4.) circle (1.0pt);
+\draw[color=ududff] (3.1837388648347518,4.073741891061226) node {$z_1 = 3 + 4j$};
+\draw[color=qqwuqq] (1.26359463768066,0.25256917555938246) node {$\varphi = 0.93 rad$};
+\draw [fill=uuuuuu] (0.,0.) circle (2.0pt);
+\draw[color=uuuuuu] (0.03311334100231022,0.08159772369509571) node {$A$};
+\draw[color=black] (1.8096934502732507,1.9978269240308382) node {|z|};
+\end{scriptsize}
+\end{tikzpicture}
+
+\end{frame}
+
+\begin{frame}{Polarform einer komplexen Zahl}
+Mit der Polarform einer komplexen Zahl vereinfachen sich manche Berechnungen, insbesondere die Multiplikation und die Division einer komplexen Zahl. Zudem liefert sie eine geometrisch anschauliche Darstellung dieser Rechenoperationen:
+Wegen 
+\begin{eqnarray*}	
+& (\cos\varphi_1 + j \sin\varphi_1 )  \cdot (\cos\varphi_2 + j \sin\varphi_2 ) \\ &  = e^{j\varphi_1} \cdot e^{j\varphi_2} \\ & = e^{j(\varphi_1 + \varphi_2)} \\ & = \cos(\varphi_1 + \varphi_2 )+ j \sin (\varphi_1 + \varphi_2) 
+\end{eqnarray*}
+
+entspricht die Multiplikation zweier komplexer Zahlen geometrisch einer Drehung der Zahl 1 zuerst um den Winkel $\varphi_1$ und einer weiteren Drehung um $\varphi_2$.	
+\end{frame}
+
+\begin{frame}{Polarform einer komplexen Zahl - Additionstheoreme}
+Man kann damit die Additionstheoreme leicht herleiten: Wegen 
+\begin{eqnarray*}	
+& (\cos\varphi_1 + j \sin\varphi_1 )  \cdot (\cos\varphi_2 + j \sin\varphi_2 ) \\ &  = e^{j\varphi_1} \cdot e^{j\varphi_2} \\ & = e^{j(\varphi_1 + \varphi_2)} \\ & = \cos(\varphi_1 + \varphi_2 )+ j \sin (\varphi_1 + \varphi_2) 
+\end{eqnarray*}
+und auch (durch Ausmultiplizieren und Sortieren)
+\begin{eqnarray*}	
+& (\cos\varphi_1 + j \sin\varphi_1 )  \cdot (\cos\varphi_2 + j \sin\varphi_2 ) \\ 
+&  = (\cos \varphi_1 \cos \varphi_2 - \sin\varphi_1 \sin\varphi_2 ) + j (\cos \varphi_1 \sin\varphi_2 +  \cos \varphi_2 \sin\varphi_1 )
+\end{eqnarray*}
+Also gilt:
+$$
+\cos(\varphi_1 + \varphi_2 ) = \cos \varphi_1 \cos \varphi_2 - \sin\varphi_1 \sin\varphi_2 
+$$
+und 
+$$
+\sin (\varphi_1 + \varphi_2)  = \cos \varphi_1 \sin\varphi_2 +  \cos \varphi_2 \sin\varphi_1
+$$
+
+\end{frame} 

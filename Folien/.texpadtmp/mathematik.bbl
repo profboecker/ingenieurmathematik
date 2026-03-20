@@ -1,0 +1,202 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global/global}
+    \entry{arens-mathe}{book}{}{}
+      \name{author}{6}{}{%
+        {{hash=cd40bf4770c1007ce4fca15b61875d88}{%
+           family={Arens},
+           familyi={A\bibinitperiod},
+           given={Tilo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=86f4ff03fe267173d61720901d23137a}{%
+           family={Hettlich},
+           familyi={H\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ceabf072ae17f8b54e64986c0f958b98}{%
+           family={Karpfinger},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0fa80d3ed211e5e273787c09935c7138}{%
+           family={Kockelkorn},
+           familyi={K\bibinitperiod},
+           given={Ulrich},
+           giveni={U\bibinitperiod}}}%
+        {{hash=6e419122651e70b7df785b477377c785}{%
+           family={Lichtenegger},
+           familyi={L\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2f0e0033bb6c5c353a093854ea1d66a7}{%
+           family={Stachel},
+           familyi={S\bibinitperiod},
+           given={Hellmuth},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Spektrum Akademischer Verlag}%
+      }
+      \strng{namehash}{93a0ae2d6e96a19f5b10ff1de42ab3d1}
+      \strng{fullhash}{08fa4bea99ebad3e2c60e7d4b607253c}
+      \strng{fullhashraw}{08fa4bea99ebad3e2c60e7d4b607253c}
+      \strng{bibnamehash}{93a0ae2d6e96a19f5b10ff1de42ab3d1}
+      \strng{authorbibnamehash}{93a0ae2d6e96a19f5b10ff1de42ab3d1}
+      \strng{authornamehash}{93a0ae2d6e96a19f5b10ff1de42ab3d1}
+      \strng{authorfullhash}{08fa4bea99ebad3e2c60e7d4b607253c}
+      \strng{authorfullhashraw}{08fa4bea99ebad3e2c60e7d4b607253c}
+      \field{labelalpha}{Are+11}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2. Auflage}
+      \field{title}{Mathematik}
+      \field{year}{2011}
+    \endentry
+    \entry{diet-panik}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=b03460d0c3b414efbe817e73109c4851}{%
+           family={Dietlein},
+           familyi={D\bibinitperiod},
+           given={Monika},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9634b79b72dcfdec55645fc9ec5d4fba}{%
+           family={Romberg},
+           familyi={R\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {Springer Vieweg}%
+      }
+      \strng{namehash}{dd73a7a2f951fc954d2f7697a7f48621}
+      \strng{fullhash}{dd73a7a2f951fc954d2f7697a7f48621}
+      \strng{fullhashraw}{dd73a7a2f951fc954d2f7697a7f48621}
+      \strng{bibnamehash}{dd73a7a2f951fc954d2f7697a7f48621}
+      \strng{authorbibnamehash}{dd73a7a2f951fc954d2f7697a7f48621}
+      \strng{authornamehash}{dd73a7a2f951fc954d2f7697a7f48621}
+      \strng{authorfullhash}{dd73a7a2f951fc954d2f7697a7f48621}
+      \strng{authorfullhashraw}{dd73a7a2f951fc954d2f7697a7f48621}
+      \field{labelalpha}{DR14}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Keine Panik vor Ingenieurmathematik!}
+      \field{year}{2014}
+    \endentry
+    \entry{knorr-mathe}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=e56ea6310399e323daddbf817cb5073b}{%
+           family={Knorrenschild},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {München}%
+      }
+      \list{publisher}{1}{%
+        {Carl Hanser Verlag}%
+      }
+      \strng{namehash}{e56ea6310399e323daddbf817cb5073b}
+      \strng{fullhash}{e56ea6310399e323daddbf817cb5073b}
+      \strng{fullhashraw}{e56ea6310399e323daddbf817cb5073b}
+      \strng{bibnamehash}{e56ea6310399e323daddbf817cb5073b}
+      \strng{authorbibnamehash}{e56ea6310399e323daddbf817cb5073b}
+      \strng{authornamehash}{e56ea6310399e323daddbf817cb5073b}
+      \strng{authorfullhash}{e56ea6310399e323daddbf817cb5073b}
+      \strng{authorfullhashraw}{e56ea6310399e323daddbf817cb5073b}
+      \field{labelalpha}{Kno09}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mathematik für Ingenieure 1}
+      \field{year}{2009}
+      \keyw{Mathematik für Ingenieure,daran halte ich mich fast aussschlie{ß}lich!}
+    \endentry
+    \entry{luderer-starthilfe}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=a1fa2f0c9f6739c460f10bfa5aaabbb4}{%
+           family={Luderer},
+           familyi={L\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Spektrum}%
+      }
+      \strng{namehash}{a1fa2f0c9f6739c460f10bfa5aaabbb4}
+      \strng{fullhash}{a1fa2f0c9f6739c460f10bfa5aaabbb4}
+      \strng{fullhashraw}{a1fa2f0c9f6739c460f10bfa5aaabbb4}
+      \strng{bibnamehash}{a1fa2f0c9f6739c460f10bfa5aaabbb4}
+      \strng{authorbibnamehash}{a1fa2f0c9f6739c460f10bfa5aaabbb4}
+      \strng{authornamehash}{a1fa2f0c9f6739c460f10bfa5aaabbb4}
+      \strng{authorfullhash}{a1fa2f0c9f6739c460f10bfa5aaabbb4}
+      \strng{authorfullhashraw}{a1fa2f0c9f6739c460f10bfa5aaabbb4}
+      \field{labelalpha}{Lud15}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4. Auflage}
+      \field{title}{Starthilfe Finanzmathematik}
+      \field{year}{2015}
+    \endentry
+    \entry{walz-mathe}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=0c540b32c8455aedeea7fe5509dd8c62}{%
+           family={Walz},
+           familyi={W\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Spektrum Akademischer Verlag}%
+      }
+      \strng{namehash}{0c540b32c8455aedeea7fe5509dd8c62}
+      \strng{fullhash}{0c540b32c8455aedeea7fe5509dd8c62}
+      \strng{fullhashraw}{0c540b32c8455aedeea7fe5509dd8c62}
+      \strng{bibnamehash}{0c540b32c8455aedeea7fe5509dd8c62}
+      \strng{authorbibnamehash}{0c540b32c8455aedeea7fe5509dd8c62}
+      \strng{authornamehash}{0c540b32c8455aedeea7fe5509dd8c62}
+      \strng{authorfullhash}{0c540b32c8455aedeea7fe5509dd8c62}
+      \strng{authorfullhashraw}{0c540b32c8455aedeea7fe5509dd8c62}
+      \field{labelalpha}{Wal11}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mathematik für Fachhochschule, Duale Hochschule und Berufsakademie}
+      \field{year}{2011}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
