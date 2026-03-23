@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.3.18)  18 MAR 2026 12:20
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.3.18)  20 MAR 2026 08:38
  restricted system commands enabled.
 **mathematik.tex
 (./mathematik.tex
@@ -2874,7 +2874,7 @@ Package epstopdf Info: Source file: <Logo-CMYK.eps>
 ted-to.pdf Logo-CMYK.eps>
 (epstopdf)             \includegraphics on input line 230.
 Package epstopdf Info: Output file is already uptodate.
-<Logo-CMYK-eps-converted-to.pdf, id=37, 285.065pt x 89.33376pt>
+<Logo-CMYK-eps-converted-to.pdf, id=25, 285.065pt x 89.33376pt>
 File: Logo-CMYK-eps-converted-to.pdf Graphic file (type pdf)
 <use Logo-CMYK-eps-converted-to.pdf>
 Package luatex.def Info: Logo-CMYK-eps-converted-to.pdf  used on input line 230
@@ -2998,12 +2998,12 @@ Overfull \vbox (27.45322pt too high) has occurred while \output is active []
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/m/n' will be
 (Font)              scaled to size 8.56783pt on input line 14.
-<leibniz.jpg, id=756, 317.185pt x 401.5pt>
+<leibniz.jpg, id=718, 317.185pt x 401.5pt>
 File: leibniz.jpg Graphic file (type jpg)
 <use leibniz.jpg>
 Package luatex.def Info: leibniz.jpg  used on input line 14.
 (luatex.def)             Requested size: 111.64595pt x 141.32353pt.
-<newton.jpg, id=757, 441.65pt x 536.0025pt>
+<newton.jpg, id=719, 441.65pt x 536.0025pt>
 File: newton.jpg Graphic file (type jpg)
 <use newton.jpg>
 Package luatex.def Info: newton.jpg  used on input line 14.
@@ -3031,7 +3031,7 @@ Overfull \vbox (27.45322pt too high) has occurred while \output is active []
 [16
 
 ]
-<Geogebra/newton_geometrisch.png, id=927, 430.2474pt x 248.3679pt>
+<Geogebra/newton_geometrisch.png, id=889, 430.2474pt x 248.3679pt>
 File: Geogebra/newton_geometrisch.png Graphic file (type png)
 <use Geogebra/newton_geometrisch.png>
 Package luatex.def Info: Geogebra/newton_geometrisch.png  used on input line 49
@@ -3214,7 +3214,7 @@ Overfull \vbox (27.45322pt too high) has occurred while \output is active []
 [38
 
 ]
-<halbkreis.png, id=2291, 977.8131pt x 797.379pt>
+<halbkreis.png, id=2253, 977.8131pt x 797.379pt>
 File: halbkreis.png Graphic file (type png)
 <use halbkreis.png>
 Package luatex.def Info: halbkreis.png  used on input line 380.
@@ -3272,7 +3272,7 @@ Overfull \vbox (27.45322pt too high) has occurred while \output is active []
 [46
 
 ]
-<integral_konstantefunktion.png, id=2791, 422.7795pt x 241.6227pt>
+<integral_konstantefunktion.png, id=2741, 422.7795pt x 241.6227pt>
 File: integral_konstantefunktion.png Graphic file (type png)
 <use integral_konstantefunktion.png>
 Package luatex.def Info: integral_konstantefunktion.png  used on input line 11.
@@ -3289,7 +3289,7 @@ Overfull \vbox (27.45322pt too high) has occurred while \output is active []
 [47
 
 <./integral_konstantefunktion.png>]
-<integral_linearefunktion.png, id=2843, 422.7795pt x 241.6227pt>
+<integral_linearefunktion.png, id=2793, 422.7795pt x 241.6227pt>
 File: integral_linearefunktion.png Graphic file (type png)
 <use integral_linearefunktion.png>
 Package luatex.def Info: integral_linearefunktion.png  used on input line 21.
@@ -3301,7 +3301,7 @@ Overfull \vbox (27.45322pt too high) has occurred while \output is active []
 [48
 
 <./integral_linearefunktion.png>]
-<integral_quadratischefunktion.png, id=2892, 422.7795pt x 241.6227pt>
+<integral_quadratischefunktion.png, id=2842, 422.7795pt x 241.6227pt>
 File: integral_quadratischefunktion.png Graphic file (type png)
 <use integral_quadratischefunktion.png>
 Package luatex.def Info: integral_quadratischefunktion.png  used on input line 
@@ -3560,22 +3560,22 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.0pt have occurred.
 
 Package rerunfilecheck Info: File `mathematik.out' has not changed.
-(rerunfilecheck)             Checksum: 0C75F26E63BDD093D5FFDA5CDB421EA2;471.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'mathematik.run.xml'.
 
 \openout1 = mathematik.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 62774 strings out of 476076
+ 62740 strings out of 476076
  125165,2848258 words of node,token memory allocated
  10989 words of node memory still in use:
    189 hlist, 31 vlist, 20 rule, 30 disc, 4 local_par, 35 math, 262 glue, 112 ke
 rn, 29 penalty, 401 glyph, 716 attribute, 84 glue_spec, 359 attribute_list, 4 wr
 ite, 58 pdf_literal, 30 pdf_colorstack nodes
-   avail lists: 1:4,2:3775,3:1695,4:870,5:764,6:162,7:4917,8:95,9:1425,10:22,11:
-533
- 83384 multiletter control sequences out of 65536+600000
+   avail lists: 1:4,2:3775,3:1695,4:780,5:764,6:151,7:4917,8:95,9:1425,10:22,11:
+494
+ 83350 multiletter control sequences out of 65536+600000
  212 fonts using 53233375 bytes
  128i,17n,117p,1175b,2465s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/opentype/public/tex-gyre/tex
@@ -3589,9 +3589,9 @@ onts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><C:/Users/stefa/AppDa
 ta/Local/Programs/MiKTeX/fonts/opentype/public/tex-gyre-math/texgyrepagella-math
 .otf><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/opentype/public/tex-gyr
 e/texgyreheros-regular.otf>
-Output written on mathematik.pdf (86 pages, 1637365 bytes).
+Output written on mathematik.pdf (86 pages, 1626409 bytes).
 
-PDF statistics: 5236 PDF objects out of 6186 (max. 8388607)
+PDF statistics: 5185 PDF objects out of 6186 (max. 8388607)
  193 named destinations out of 1000 (max. 1048576)
- 5090 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 5056 words of extra memory for PDF output out of 10000 (max. 100000000)
 
