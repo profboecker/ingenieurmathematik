@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.3.18)  20 MAR 2026 08:38
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.4.16)  16 APR 2026 15:28
  restricted system commands enabled.
 **mathematik.tex
 (./mathematik.tex
@@ -882,7 +882,7 @@ Package: gauss 2003/01/14
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty
-Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaT
+Package: babel 2026/03/24 v26.5 The multilingual framework for LuaLaTeX, pdfLaT
 eX and XeLaTeX
 
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/generic/babel/luababel.def
@@ -1012,7 +1012,7 @@ Language: ngerman
 
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/latex/babel-german/babel-germ
 an.def
-Package babel Info: Making " an active character on input line 476.
+Package babel Info: Making " an active character on input line 496.
 
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/generic/hyph-utf8/loadhyph/lo
 adhyph-de-1996.tex UTF-8 German hyphenation patterns (reformed orthography)
@@ -2328,7 +2328,7 @@ Package: pst-calculate 2019/01/24 v. 0.02(Herbert Voss) Support for caculations
  with floating point numbers.
 
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
+Package: siunitx 2026-03-26 v3.5.1 A comprehensive (SI) units package
 \l__siunitx_number_uncert_offset_int=\count448
 \l__siunitx_number_exponent_fixed_int=\count449
 \l__siunitx_number_min_decimal_int=\count450
@@ -2338,48 +2338,49 @@ Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
 \l__siunitx_number_upper_threshold_int=\count454
 \l__siunitx_number_group_first_int=\count455
 \l__siunitx_number_group_size_int=\count456
-\l__siunitx_number_group_minimum_int=\count457
-\l__siunitx_angle_tmp_dim=\dimen418
-\l__siunitx_angle_marker_box=\box99
-\l__siunitx_angle_unit_box=\box100
-\l__siunitx_compound_count_int=\count458
+\l__siunitx_number_group_min_int=\count457
+\l__siunitx_number_group_minimum_int=\count458
+\l__siunitx_compound_count_int=\count459
 
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/latex/translations/translatio
 ns.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
 )
-\l__siunitx_table_tmp_box=\box101
-\l__siunitx_table_tmp_dim=\dimen419
-\l__siunitx_table_column_width_dim=\dimen420
-\l__siunitx_table_integer_box=\box102
-\l__siunitx_table_decimal_box=\box103
-\l__siunitx_table_uncert_box=\box104
-\l__siunitx_table_before_box=\box105
-\l__siunitx_table_after_box=\box106
-\l__siunitx_table_before_dim=\dimen421
-\l__siunitx_table_carry_dim=\dimen422
-\l__siunitx_unit_tmp_int=\count459
-\l__siunitx_unit_position_int=\count460
-\l__siunitx_unit_total_int=\count461
+\l__siunitx_table_tmp_box=\box99
+\l__siunitx_table_tmp_dim=\dimen418
+\l__siunitx_table_column_width_dim=\dimen419
+\l__siunitx_table_integer_box=\box100
+\l__siunitx_table_decimal_box=\box101
+\l__siunitx_table_uncert_box=\box102
+\l__siunitx_table_before_box=\box103
+\l__siunitx_table_after_box=\box104
+\l__siunitx_table_before_dim=\dimen420
+\l__siunitx_table_carry_dim=\dimen421
+\l__siunitx_unit_tmp_int=\count460
+\l__siunitx_unit_position_int=\count461
+\l__siunitx_unit_total_int=\count462
+\l__siunitx_sexagesimal_tmp_dim=\dimen422
+\l__siunitx_sexagesimal_marker_box=\box105
+\l__siunitx_sexagesimal_unit_box=\box106
 ))
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/generic/xstring/xstring.tex
-\xs_counta=\count462
-\xs_countb=\count463
+\xs_counta=\count463
+\xs_countb=\count464
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/generic/pst-math/pst-math.tex
 )
 File: pst-math.tex 2022/11/21 v1.94 `PST-math' (hv)
-\c@Rand@No=\count464
-\c@Random@Left=\count465
-\c@Random@Right=\count466
-\c@Random@No@max=\count467
+\c@Rand@No=\count465
+\c@Random@Left=\count466
+\c@Random@Right=\count467
+\c@Random@No@max=\count468
 )
 Package: pstricks-add 2021/09/10 v. 0.17 package wrapper for pstricks-add.tex (
 hv)
@@ -2401,7 +2402,7 @@ Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
 
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count468
+\lrq@indent=\count469
 
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -2409,49 +2410,49 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count469
-\c@listtotal=\count470
-\c@listcount=\count471
-\c@liststart=\count472
-\c@liststop=\count473
-\c@citecount=\count474
-\c@citetotal=\count475
-\c@multicitecount=\count476
-\c@multicitetotal=\count477
-\c@instcount=\count478
-\c@maxnames=\count479
-\c@minnames=\count480
-\c@maxitems=\count481
-\c@minitems=\count482
-\c@citecounter=\count483
-\c@maxcitecounter=\count484
-\c@savedcitecounter=\count485
-\c@uniquelist=\count486
-\c@uniquename=\count487
-\c@refsection=\count488
-\c@refsegment=\count489
-\c@maxextratitle=\count490
-\c@maxextratitleyear=\count491
-\c@maxextraname=\count492
-\c@maxextradate=\count493
-\c@maxextraalpha=\count494
-\c@abbrvpenalty=\count495
-\c@highnamepenalty=\count496
-\c@lownamepenalty=\count497
-\c@maxparens=\count498
-\c@parenlevel=\count499
-\blx@tempcnta=\count500
-\blx@tempcntb=\count501
-\blx@tempcntc=\count502
-\c@blx@maxsection=\count503
-\blx@maxsegment@0=\count504
-\blx@notetype=\count505
-\blx@parenlevel@text=\count506
-\blx@parenlevel@foot=\count507
-\blx@sectionciteorder@0=\count508
-\blx@sectionciteorderinternal@0=\count509
-\blx@entrysetcounter=\count510
-\blx@biblioinstance=\count511
+\c@tabx@nest=\count470
+\c@listtotal=\count471
+\c@listcount=\count472
+\c@liststart=\count473
+\c@liststop=\count474
+\c@citecount=\count475
+\c@citetotal=\count476
+\c@multicitecount=\count477
+\c@multicitetotal=\count478
+\c@instcount=\count479
+\c@maxnames=\count480
+\c@minnames=\count481
+\c@maxitems=\count482
+\c@minitems=\count483
+\c@citecounter=\count484
+\c@maxcitecounter=\count485
+\c@savedcitecounter=\count486
+\c@uniquelist=\count487
+\c@uniquename=\count488
+\c@refsection=\count489
+\c@refsegment=\count490
+\c@maxextratitle=\count491
+\c@maxextratitleyear=\count492
+\c@maxextraname=\count493
+\c@maxextradate=\count494
+\c@maxextraalpha=\count495
+\c@abbrvpenalty=\count496
+\c@highnamepenalty=\count497
+\c@lownamepenalty=\count498
+\c@maxparens=\count499
+\c@parenlevel=\count500
+\blx@tempcnta=\count501
+\blx@tempcntb=\count502
+\blx@tempcntc=\count503
+\c@blx@maxsection=\count504
+\blx@maxsegment@0=\count505
+\blx@notetype=\count506
+\blx@parenlevel@text=\count507
+\blx@parenlevel@foot=\count508
+\blx@sectionciteorder@0=\count509
+\blx@sectionciteorderinternal@0=\count510
+\blx@entrysetcounter=\count511
+\blx@biblioinstance=\count512
 \labelnumberwidth=\skip83
 \labelalphawidth=\skip84
 \biblabelsep=\skip85
@@ -2463,9 +2464,9 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read5
 \blx@bcfout=\write5
 \blx@langwohyphens=\language80
-\c@mincomprange=\count512
-\c@maxcomprange=\count513
-\c@mincompwidth=\count514
+\c@mincomprange=\count513
+\c@maxcomprange=\count514
+\c@mincompwidth=\count515
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -2476,74 +2477,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count515
-\c@savedafterword=\count516
-\c@annotator=\count517
-\c@savedannotator=\count518
-\c@author=\count519
-\c@savedauthor=\count520
-\c@bookauthor=\count521
-\c@savedbookauthor=\count522
-\c@commentator=\count523
-\c@savedcommentator=\count524
-\c@editor=\count525
-\c@savededitor=\count526
-\c@editora=\count527
-\c@savededitora=\count528
-\c@editorb=\count529
-\c@savededitorb=\count530
-\c@editorc=\count531
-\c@savededitorc=\count532
-\c@foreword=\count533
-\c@savedforeword=\count534
-\c@holder=\count535
-\c@savedholder=\count536
-\c@introduction=\count537
-\c@savedintroduction=\count538
-\c@namea=\count539
-\c@savednamea=\count540
-\c@nameb=\count541
-\c@savednameb=\count542
-\c@namec=\count543
-\c@savednamec=\count544
-\c@translator=\count545
-\c@savedtranslator=\count546
-\c@shortauthor=\count547
-\c@savedshortauthor=\count548
-\c@shorteditor=\count549
-\c@savedshorteditor=\count550
-\c@labelname=\count551
-\c@savedlabelname=\count552
-\c@institution=\count553
-\c@savedinstitution=\count554
-\c@lista=\count555
-\c@savedlista=\count556
-\c@listb=\count557
-\c@savedlistb=\count558
-\c@listc=\count559
-\c@savedlistc=\count560
-\c@listd=\count561
-\c@savedlistd=\count562
-\c@liste=\count563
-\c@savedliste=\count564
-\c@listf=\count565
-\c@savedlistf=\count566
-\c@location=\count567
-\c@savedlocation=\count568
-\c@organization=\count569
-\c@savedorganization=\count570
-\c@origlocation=\count571
-\c@savedoriglocation=\count572
-\c@origpublisher=\count573
-\c@savedorigpublisher=\count574
-\c@publisher=\count575
-\c@savedpublisher=\count576
-\c@language=\count577
-\c@savedlanguage=\count578
-\c@origlanguage=\count579
-\c@savedoriglanguage=\count580
-\c@pageref=\count581
-\c@savedpageref=\count582
+\c@afterword=\count516
+\c@savedafterword=\count517
+\c@annotator=\count518
+\c@savedannotator=\count519
+\c@author=\count520
+\c@savedauthor=\count521
+\c@bookauthor=\count522
+\c@savedbookauthor=\count523
+\c@commentator=\count524
+\c@savedcommentator=\count525
+\c@editor=\count526
+\c@savededitor=\count527
+\c@editora=\count528
+\c@savededitora=\count529
+\c@editorb=\count530
+\c@savededitorb=\count531
+\c@editorc=\count532
+\c@savededitorc=\count533
+\c@foreword=\count534
+\c@savedforeword=\count535
+\c@holder=\count536
+\c@savedholder=\count537
+\c@introduction=\count538
+\c@savedintroduction=\count539
+\c@namea=\count540
+\c@savednamea=\count541
+\c@nameb=\count542
+\c@savednameb=\count543
+\c@namec=\count544
+\c@savednamec=\count545
+\c@translator=\count546
+\c@savedtranslator=\count547
+\c@shortauthor=\count548
+\c@savedshortauthor=\count549
+\c@shorteditor=\count550
+\c@savedshorteditor=\count551
+\c@labelname=\count552
+\c@savedlabelname=\count553
+\c@institution=\count554
+\c@savedinstitution=\count555
+\c@lista=\count556
+\c@savedlista=\count557
+\c@listb=\count558
+\c@savedlistb=\count559
+\c@listc=\count560
+\c@savedlistc=\count561
+\c@listd=\count562
+\c@savedlistd=\count563
+\c@liste=\count564
+\c@savedliste=\count565
+\c@listf=\count566
+\c@savedlistf=\count567
+\c@location=\count568
+\c@savedlocation=\count569
+\c@organization=\count570
+\c@savedorganization=\count571
+\c@origlocation=\count572
+\c@savedoriglocation=\count573
+\c@origpublisher=\count574
+\c@savedorigpublisher=\count575
+\c@publisher=\count576
+\c@savedpublisher=\count577
+\c@language=\count578
+\c@savedlanguage=\count579
+\c@origlanguage=\count580
+\c@savedoriglanguage=\count581
+\c@pageref=\count582
+\c@savedpageref=\count583
 \shorthandwidth=\skip91
 \shortjournalwidth=\skip92
 \shortserieswidth=\skip93
@@ -2573,19 +2574,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count583
-\c@textcitetotal=\count584
-\c@textcitemaxnames=\count585
-\c@biburlbigbreakpenalty=\count586
-\c@biburlbreakpenalty=\count587
-\c@biburlnumpenalty=\count588
-\c@biburlucpenalty=\count589
-\c@biburllcpenalty=\count590
+\c@textcitecount=\count584
+\c@textcitetotal=\count585
+\c@textcitemaxnames=\count586
+\c@biburlbigbreakpenalty=\count587
+\c@biburlbreakpenalty=\count588
+\c@biburlnumpenalty=\count589
+\c@biburlucpenalty=\count590
+\c@biburllcpenalty=\count591
 \biburlbigskip=\muskip20
 \biburlnumskip=\muskip21
 \biburlucskip=\muskip22
 \biburllcskip=\muskip23
-\c@smartand=\count591
+\c@smartand=\count592
 )
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
@@ -2599,8 +2600,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/standard.b
 bx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count592
-\c@bbx:relatedtotal=\count593
+\c@bbx:relatedcount=\count593
+\c@bbx:relatedtotal=\count594
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
@@ -2658,8 +2659,8 @@ seahorse.sty)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count594
-\@quotereset=\count595
+\@quotelevel=\count595
+\@quotereset=\count596
 (./mathematik.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 9.
@@ -2725,16 +2726,16 @@ LaTeX Font Info:    ... okay on input line 220.
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count596
+\scratchcounter=\count597
 \scratchdimen=\dimen425
 \scratchbox=\box107
-\nofMPsegments=\count597
-\nofMParguments=\count598
+\nofMPsegments=\count598
+\nofMParguments=\count599
 \everyMPshowfont=\toks66
-\MPscratchCnt=\count599
+\MPscratchCnt=\count600
 \MPscratchDim=\dimen426
-\MPnumerator=\count600
-\makeMPintoPDFobject=\count601
+\MPnumerator=\count601
+\makeMPintoPDFobject=\count602
 \everyMPtoPDFconversion=\toks67
 )
 (C:/Users/stefa/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-b
@@ -3567,7 +3568,7 @@ Package logreq Info: Writing requests to 'mathematik.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 62740 strings out of 476076
+ 62871 strings out of 476076
  125165,2848258 words of node,token memory allocated
  10989 words of node memory still in use:
    189 hlist, 31 vlist, 20 rule, 30 disc, 4 local_par, 35 math, 262 glue, 112 ke
@@ -3575,8 +3576,8 @@ rn, 29 penalty, 401 glyph, 716 attribute, 84 glue_spec, 359 attribute_list, 4 wr
 ite, 58 pdf_literal, 30 pdf_colorstack nodes
    avail lists: 1:4,2:3775,3:1695,4:780,5:764,6:151,7:4917,8:95,9:1425,10:22,11:
 494
- 83350 multiletter control sequences out of 65536+600000
- 212 fonts using 53233375 bytes
+ 83481 multiletter control sequences out of 65536+600000
+ 212 fonts using 53233199 bytes
  128i,17n,117p,1175b,2465s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/opentype/public/tex-gyre/tex
 gyreheros-bolditalic.otf><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/ope
@@ -3589,7 +3590,7 @@ onts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><C:/Users/stefa/AppDa
 ta/Local/Programs/MiKTeX/fonts/opentype/public/tex-gyre-math/texgyrepagella-math
 .otf><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/opentype/public/tex-gyr
 e/texgyreheros-regular.otf>
-Output written on mathematik.pdf (86 pages, 1626409 bytes).
+Output written on mathematik.pdf (86 pages, 1626507 bytes).
 
 PDF statistics: 5185 PDF objects out of 6186 (max. 8388607)
  193 named destinations out of 1000 (max. 1048576)
