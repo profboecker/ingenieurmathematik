@@ -91,12 +91,12 @@
 	\begin{definition}
 		Definiert man die Funktion $F$ als
 		\[
-			F(x):=\int_{a}^{x} f(x) dx
+			F(x):=\int_{a}^{x} f(t) \, dt
 		\]
 		so erhält man eine \textbf{Integralfunktion} oder \textbf{Stammfunktion} von $f$.
 		Insbesondere ist 
 		\[
-			\int_{0}^{x} x^2 dx = \frac{1}{3} x^3
+			\int_{0}^{x} t^2 \, dt = \frac{1}{3} x^3
 		\] 
 	\end{definition}
 \end{frame}
@@ -452,7 +452,7 @@ erhält man mit $g(x)=x+a$ und $\frac{dg}{dx}=1$, also $dg=dx$ und daher
 
 \begin{frame}{Integration von rationalen Funktionen}
 	\small{\begin{example}
-		Für $k\neq -1 $ ist
+		Für $k\neq 1 $ ist
 		\[
 			\int \frac{1}{x^{k}} dx = \int x^{-k} dx = \frac{x^{-k+1}}{-k+1} + C = \frac{1}{(1-k)x^{k-1}} + C
 		\]	
@@ -574,7 +574,7 @@ erhält man mit $g(x)=x+a$ und $\frac{dg}{dx}=1$, also $dg=dx$ und daher
 	\end{align*}
 	Wegen $\Gamma (1)=\lim_{b \to \infty} \int_{0}^{b} e^{-t}\,dt = \lim_{b \to \infty} [-e^{-t}]_{0}^{b} = 1$ ist damit 
 	\[
-	\Gamma (x+1) = x \Gamma (x) = x (x-1) \Gamma(x-2) = x (x-1) (x-2) \ldots 2 \cdot 1 = x!
+	\Gamma (x+1) = x \Gamma (x) = x (x-1) \Gamma(x-1) = x (x-1) (x-2) \ldots 2 \cdot 1 = x!
 	\]}
 \end{example}
 \end{frame}
@@ -626,7 +626,7 @@ erhält man mit $g(x)=x+a$ und $\frac{dg}{dx}=1$, also $dg=dx$ und daher
 			& = \pi \int_{0}^{h} \left( \frac{R-r}{h} x +r \right)^{2}\, dx \\
 			& = \pi \int_{0}^{h} \frac{(R-r)^2}{h^2} x^2  +2 \frac{R-r}{h}xr +r^2 \, dx \\
 			& = \pi \left[ \frac{(R-r)^2}{3h^2} x^3  + \frac{R-r}{h}rx^{2} +r^2 x \right]_{0}^{h} \\
-			& = \pi \frac{(R-r)^2}{3}h + (R-r)hr + r^2 h = \frac{h \pi}{3} (R^2 + Rr +r^2 ) 
+			& = \pi \left( \frac{(R-r)^2}{3}h + (R-r)hr + r^2 h \right) = \frac{h \pi}{3} (R^2 + Rr +r^2 ) 
 		\end{align*}
 	\end{example}}
 \end{frame}

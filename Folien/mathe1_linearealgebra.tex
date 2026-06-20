@@ -10,7 +10,7 @@
 	\begin{itemize}
 		\item Druck (z.B. 3,2 bar)
 		\item Temperatur (z.B. $24^\circ$ Celsius)
-		\item Dichte (z.B. $1000 \frac{g}{cm^3}$)
+		\item Dichte (z.B. $1 \frac{g}{cm^3}$)
 	\end{itemize}
 	\begin{definition}[Vektor]
 		Eine Größe, die nur durch die Angabe einer (reellen) Zahl (mit evtl. einer Einheit) \textbf{und einer Richtung} angegeben werden kann, heißt \textbf{Vektor}.
@@ -987,7 +987,7 @@ Insbesondere ist
 	
 	{\footnotesize Für die Punkte $A=\begin{pmatrix}1\\2\\3\end{pmatrix}$, $B=\begin{pmatrix}3\\-1\\3\end{pmatrix}$ und $C=\begin{pmatrix}4\\-3\\0\end{pmatrix}$ ist
 	\[
-	E(A,B,C):= \left\{ \vv{y} \in \mathbb{R} \middle| \vv{y} = \begin{pmatrix}
+	E(A,B,C):= \left\{ \vv{y} \in \mathbb{R}^3 \middle| \vv{y} = \begin{pmatrix}
 	1\\2\\3
 	\end{pmatrix} + \lambda \begin{pmatrix}
 	2\\-3\\0
@@ -1047,7 +1047,7 @@ Insbesondere ist
 		\]
 		\item Die Normalenform ist dann
 		\[
-		\vv{n} \cdot \vv{y} = \vv{n} \cdot \vv{a} = 0 \Leftrightarrow n_1 y_1 + n_2 y_2 + n_3 y_3 = c
+		\vv{n} \cdot \vv{y} = \vv{n} \cdot \vv{a} = c \Leftrightarrow n_1 y_1 + n_2 y_2 + n_3 y_3 = c
 		\]
 	\end{enumerate}	
 \end{frame}
@@ -1127,7 +1127,7 @@ Insbesondere ist
 	\end{center}
 	Der Abstand $d(P,E)$ eines Punktes $P$ mit dem Ortsvektor $\vv{p}$ zur Ebene $E : \vv{n} \cdot \left( \vv{y}  - \vv{a} \right) = 0$ ist
 	\[
-	d(P,E) = \frac{\vv{n} \cdot \left( \vv{p} - \vv{a} \right)}{\| \vv{n} \|} = \frac{\vv{n} \cdot \vv{p}}{\| \vv{n} \|} - \frac{\vv{n} \cdot \vv{a}}{\| \vv{n} \|}
+	d(P,E) = \frac{\left| \vv{n} \cdot \left( \vv{p} - \vv{a} \right) \right|}{\| \vv{n} \|} = \left| \frac{\vv{n} \cdot \vv{p}}{\| \vv{n} \|} - \frac{\vv{n} \cdot \vv{a}}{\| \vv{n} \|} \right|
 	\]
 	\end{framed}
 	Man muß  also die Normalform nehmen und noch durch die Länge des Normalenvektors teilen.
@@ -1785,7 +1785,7 @@ Drei Anbieter eines Produktes haben in einer bestimmten Periode (1) Marktanteile
 	Für das $2\times 2$-Gleichungssystem
 	\begin{align*}
 		a_{11} x_{1} + a_{12} x_{2} = b_{1} \\
-		a_{21} x_{2} + a_{22} x_{2} = b_{2}
+		a_{21} x_{1} + a_{22} x_{2} = b_{2}
 	\end{align*}
 	kann man auch schreiben
 	\[
@@ -1802,8 +1802,8 @@ Drei Anbieter eines Produktes haben in einer bestimmten Periode (1) Marktanteile
 	oder für das Gauß-Jordan-Verfahren:
 	\[
 		\left(\begin{array}{cc|c}
-			a_{11} & a_{21} & b_{1} \\
-			a_{12} & a_{22} & b_{2}
+			a_{11} & a_{12} & b_{1} \\
+			a_{21} & a_{22} & b_{2}
 		\end{array}\right)
 	\]
 \end{frame}
@@ -1812,8 +1812,8 @@ Drei Anbieter eines Produktes haben in einer bestimmten Periode (1) Marktanteile
 	Multipliziert man für das Gauß-Jordan-Verfahren
 	\[
 	\left(\begin{array}{cc|c}
-	a_{11} & a_{21} & b_{1} \\
-	a_{12} & a_{22} & b_{2}
+	a_{11} & a_{12} & b_{1} \\
+	a_{21} & a_{22} & b_{2}
 	\end{array}\right)
 	\]
 	\begin{itemize}
@@ -1823,8 +1823,8 @@ Drei Anbieter eines Produktes haben in einer bestimmten Periode (1) Marktanteile
 	so erhält man:
 	\[
 	\left(\begin{array}{cc|c}
-	a_{11}a_{22} - a_{12}a_{12} & 0  & a_{22}b_{1} - a_{12}b_{2} \\
-	0 & a_{11}a_{22} - a_{12}a_{12} & a_{11}b_{2} - a_{21}b_{1}
+	a_{11}a_{22} - a_{21}a_{12} & 0  & a_{22}b_{1} - a_{12}b_{2} \\
+	0 & a_{11}a_{22} - a_{21}a_{12} & a_{11}b_{2} - a_{21}b_{1}
 	\end{array}\right)
 	\]
 	Das hat schon Diagonalform und die Faktoren vor $x_{1}$ und $x_{2}$ sind gleich, nämlich die \textbf{Determinante von $\pmb{A}$}

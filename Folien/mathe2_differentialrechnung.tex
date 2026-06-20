@@ -217,11 +217,11 @@
 	\begin{theorem}
 		Für zwei auf ihrem jeweiligen Definitionsbereich differenzierbare Funktionen $f$ und $g$ mit $W(g) \subset D(f)$ (d.h. man kann die $y$-Werte von $g$ in $f$ einsetzen.) sei $h$ die Verkettung der beiden Funktionen, also
 		\[
-			h(x):= f(g(x)) \qquad \forall x \in D(f)
+			h(x):= f(g(x)) \qquad \forall x \in D(g)
 		\]
 		Dann gilt für die Ableitung von $h$:
 		\[
-			h'(x)=f'(g(x)) \cdot g'(x) \qquad \forall x \in D(f)
+			h'(x)=f'(g(x)) \cdot g'(x) \qquad \forall x \in D(g)
 		\]
 		Man nennt $f'(g(x))$ die \textbf{äußere Ableitung} und $g'(x)$ \textbf{die innere Ableitung}.
 	\end{theorem}
@@ -345,7 +345,7 @@
 		\]
 	\end{theorem}
 	\begin{theorem}[Rolle]
-		Für jede differenzierbare Funktion $f$ mit $f(a)=f(b)$ gibt es eine Stelle $x_{0}$ mit $f'(x_{0}) = 0$.
+		Für jede im Intervall $[a,b]$ stetige und in $]a,b[$ differenzierbare Funktion $f$ mit $f(a)=f(b)$ gibt es eine Stelle $x_{0}$ mit $a < x_{0} < b$ und $f'(x_{0}) = 0$.
 	\end{theorem}
 	\begin{theorem}[Mittelwertsatz]
 		Ist eine Funktion $f$ im Intervall $[a, b]$ stetig und in $]a, b[$ differenzierbar, dann gibt es eine Stelle $x_{0}$ mit $a < x_{0} < b$ und 
@@ -403,11 +403,11 @@
 	Wenn zudem die Tangente an einem Wendepunkt waagerecht ist, nennt man den Wendepunkt einen \textbf{Sattelpunkt}. 	
 \end{definition}
 \begin{theorem}
-	Eine dreimal differenzierbare Funktion $f$ besitzt an der Stelle $x_{0}$ einen Wendepunkt genau dann, wenn 
+	Eine dreimal differenzierbare Funktion $f$ besitzt an der Stelle $x_{0}$ einen Wendepunkt, wenn
 	\[
 		f''(x_{0}) = 0 \quad \text{und} \quad f'''(x_{0})\neq 0
 	\]
-	ist.
+	ist (hinreichende Bedingung).
 	Wenn zudem $f'(x_{0}) = 0$ ist, so hat die Funktion an der Stelle $x_{0}$ einen Sattelpunkt.
 \end{theorem}
 \end{frame}
