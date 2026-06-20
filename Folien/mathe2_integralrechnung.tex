@@ -16,13 +16,13 @@
 	
 	Geometrisch (Trapezformel) findet man hier:
 \scriptsize{	\[
-		W = \frac{1}{2} (f(x_{2})+f(x_{1})) (x_{2}-x_{1}) = \frac{1}{2} (ax_{2} + b + (ax_{1} + b)) (x_{2}-x_{1}) = ax_{2}^2-ax_{1}^{2} + b(x_{2}-x_{1})
+		W = \frac{1}{2} (f(x_{2})+f(x_{1})) (x_{2}-x_{1}) = \frac{1}{2} (ax_{2} + b + (ax_{1} + b)) (x_{2}-x_{1}) = \frac{a}{2}(x_{2}^{2}-x_{1}^{2}) + b(x_{2}-x_{1})
 	\]}
 \end{frame}
 
 \begin{frame}{Integral quadratische Funktion}
 	\tiny{
-	Für die quadratische Funktion $f(x)=x^{2}$ wir das ganze komplizierter, daher verwenden wir hier $N$ einfache (untere) Treppenfunktionen:
+	Für die quadratische Funktion $f(x)=x^{2}$ wird das ganze komplizierter, daher verwenden wir hier $N$ einfache (untere) Treppenfunktionen:
 	
 	\includegraphics[width=8cm]{integral_quadratischefunktion}
 
@@ -261,7 +261,7 @@
 	\]
 \end{theorem}
 \begin{bemerkung}
-	Der Satz ist dann nützlich, wenn man das Produkt zweier Funktionen integrieren möchte und die Stammfunktion $g(x)$ des einen Faktors (hier $g'(x)$) kennt. Man wälzt dann mit diesem Satz die Ableitung des Fakt $g'(x)$ auf $f(x)$; oft vereinfacht das die Integration. 
+	Der Satz ist dann nützlich, wenn man das Produkt zweier Funktionen integrieren möchte und die Stammfunktion $g(x)$ des einen Faktors (hier $g'(x)$) kennt. Man wälzt dann mit diesem Satz die Ableitung des Faktors $g'(x)$ auf $f(x)$; oft vereinfacht das die Integration. 
 \end{bemerkung}
 \end{frame}
 
@@ -285,7 +285,7 @@
 
 \begin{frame}{Beispiele zur partiellen Integration}
 \begin{example}
-	Für die Stammfunktion der Funktion $h(x)=(3x-7)\cdot e^{-x}$ gilt mit $f(x)=3x+7$ und $g'(x)=e^{-x}$:
+	Für die Stammfunktion der Funktion $h(x)=(3x-7)\cdot e^{-x}$ gilt mit $f(x)=3x-7$ und $g'(x)=e^{-x}$:
 		\begin{align*}
 			\int (3x-7) \cdot e^{-x} dx & = (3x-7)\cdot (-e^{-x}) - \int 3 \cdot (-e^{-x}) dx \\
 			& = (3x-7)\cdot (-e^{-x}) + 3 \int e^{-x} dx \\
@@ -348,7 +348,7 @@
 \begin{bemerkung}
 	Sind $f$ und $g$ stetige Funktionen und $F$ eine Stammfunktion von $f$, so gilt offenbar nicht nur $F'(x)=f(x)$, sondern (wegen der Kettenregel) auch:
 	\[
-		\left(F(g(x)\right)' = F'(g(x))\cdot g'(x) = f(g(x))\cdot g'(x)
+		\left(F(g(x))\right)' = F'(g(x))\cdot g'(x) = f(g(x))\cdot g'(x)
 	\]
 	Also ist $F(g(x))$ eine Stammfunktion von $f(g(x))\cdot g'(x)$
 \end{bemerkung}
@@ -414,7 +414,7 @@ erhält man mit $g(x)=x+a$ und $\frac{dg}{dx}=1$, also $dg=dx$ und daher
 \subsection{Logarithmische Integration}
 \begin{frame}{Logarithmische Integration}
 \begin{bemerkung}
-	Das vorletzten Beispiele sind Spezialfälle der folgenden, allgemeinen Beobachtung:
+	Die vorletzten Beispiele sind Spezialfälle der folgenden, allgemeinen Beobachtung:
 	Für die Ableitung einer Funktion $h(x)=\ln |f(x)|$ gilt wegen der Kettenregel:
 	\[
 		h'(x)=\frac{f'(x)}{f(x)}
@@ -430,7 +430,7 @@ erhält man mit $g(x)=x+a$ und $\frac{dg}{dx}=1$, also $dg=dx$ und daher
 \begin{frame}{Integration von rationalen Funktionen}
 	\begin{bemerkung}
 	\begin{itemize}
-		\item \textbf{Die gute Nachtricht:} Mit den bisherigen Methoden können Sie für jede rationale Funktion eine Stammfunktion bestimmen.
+		\item \textbf{Die gute Nachricht:} Mit den bisherigen Methoden können Sie für jede rationale Funktion eine Stammfunktion bestimmen.
 		\item \textbf{Die schlechte Nachricht:} In einigen Fällen ist das ziemlich aufwendig.
 	\end{itemize}
 	\end{bemerkung}
@@ -506,7 +506,7 @@ erhält man mit $g(x)=x+a$ und $\frac{dg}{dx}=1$, also $dg=dx$ und daher
 		\begin{align*}
 			f(x) & = \frac{A_{11}}{x-x_{1}} + \frac{A_{12}}{(x-x_{1})^{2}} + \ldots + \frac{A_{1k_{1}}}{(x-x_{1})^{k_{1}}}  \\
 			& + \frac{A_{21}}{x-x_{2}} + \frac{A_{22}}{(x-x_{2})^{2}} + \ldots + \frac{A_{2k_{2}}}{(x-x_{2})^{k_{2}}}  \\
-			& + \frac{A_{r1}}{x-x_{r}} + \frac{A_{r2}}{(x-x_{r})^{2}} + \ldots + \frac{A_{rk_{2}}}{(x-x_{2})^{k_{r}}}  \\
+			& + \frac{A_{r1}}{x-x_{r}} + \frac{A_{r2}}{(x-x_{r})^{2}} + \ldots + \frac{A_{rk_{r}}}{(x-x_{r})^{k_{r}}}  \\
 			& + \frac{B_{11}x+C_{11}}{q_{1}(x)} + \frac{B_{12}x+C_{12}}{(q_{1}(x))^{2}} + \ldots + \frac{B_{1l_{1}}x+C_{1l_{1}}}{(q_{1}(x))^{l_{1}}} \\
 			& + \ldots \\
 			& + \frac{B_{s1}x+C_{s1}}{q_{s}(x)} + \frac{B_{s2}x+C_{s2}}{(q_{s}(x))^{2}} + \ldots + \frac{B_{sl_{s}}x+C_{sl_{s}}}{(q_{s}(x))^{l_{s}}}
@@ -625,7 +625,7 @@ erhält man mit $g(x)=x+a$ und $\frac{dg}{dx}=1$, also $dg=dx$ und daher
 			V & = \pi \int_{0}^{h} \left( f(x) \right)^2 \, dx \\
 			& = \pi \int_{0}^{h} \left( \frac{R-r}{h} x +r \right)^{2}\, dx \\
 			& = \pi \int_{0}^{h} \frac{(R-r)^2}{h^2} x^2  +2 \frac{R-r}{h}xr +r^2 \, dx \\
-			& = \pi \left[ \frac{(R-r)^2}{3h^2} x^3  + \frac{R-r}{h}rx^{2} +r^2 x \right]_{0}^{h}\, dx \\
+			& = \pi \left[ \frac{(R-r)^2}{3h^2} x^3  + \frac{R-r}{h}rx^{2} +r^2 x \right]_{0}^{h} \\
 			& = \pi \frac{(R-r)^2}{3}h + (R-r)hr + r^2 h = \frac{h \pi}{3} (R^2 + Rr +r^2 ) 
 		\end{align*}
 	\end{example}}

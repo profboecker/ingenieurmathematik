@@ -1,4 +1,4 @@
-%%% Folien/Skript Mathematik I/II
+%%% Folien/Skript Ingenieurmathematik
 
 %%% Folien erstellen Anfang!
 \documentclass[10pt,ngerman,xcolor=table,hyperref={bookmarks=true,colorlinks}]{beamer}
@@ -130,7 +130,7 @@
 %%% ENDE: Für Horner-Schema
 
 \usepackage{eurosym}
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc} % wird bei XeLaTeX/LuaLaTeX ignoriert
 %\DeclareUnicodeCharacter{20AC}{\euro}
 
 \usepackage{pstricks-add}
@@ -145,6 +145,7 @@
 
 \usefonttheme[onlymath]{serif}
 
+\usepackage{csquotes}
 \usepackage[style=alphabetic]{biblatex}
 \bibliography{mathematik}
 
@@ -155,7 +156,7 @@
 %%\usetheme{PaloAlto}
 \usetheme{PaloAlto}
 \usecolortheme{seahorse}
-\definecolor{fhblau}{cmyk}{100,70,0,0}
+\definecolor{fhblau}{cmyk}{1,0.7,0,0}
 \setbeamercolor{logo}{bg=white}
 \setbeamercolor{frametitle}{bg=white}
 \setbeamercolor{frametitle}{fg=fhblau}

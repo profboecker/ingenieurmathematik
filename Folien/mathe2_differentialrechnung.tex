@@ -3,7 +3,7 @@
 \subsubsection{Definition der Ableitung an einer Stelle $x_{0}$}
 \begin{frame}{Entwickler der Infinitesimalrechnung}
 
-	{\small Die Infinitesimalrechnug (zu der die Differenzialrechnung gehört) wurde von diesen beiden Herren entwickelt. Leibniz entwickelte sie aus geometrischen Anschauungen, Newton aus physikalischen Überlegungen.
+	{\small Die Infinitesimalrechnung (zu der die Differenzialrechnung gehört) wurde von diesen beiden Herren entwickelt. Leibniz entwickelte sie aus geometrischen Anschauungen, Newton aus physikalischen Überlegungen.
 	}
 	
 	\begin{figure} 
@@ -45,7 +45,7 @@
 \end{frame}
 
 \begin{frame}{Differenzialrechnung - Newton}
-	\includegraphics[width=14cm]{Geogebra/newton_geometrisch.png}
+	\includegraphics[width=\textwidth]{Geogebra/newton_geometrisch.png}
 \end{frame}
 
 \begin{frame}{Definition - Differenzialquotient}
@@ -106,7 +106,7 @@
 	\begin{example}
 		Die \textbf{quadratische Funktion} $f(x)=ax^{2}+bx+c$ mit $a,b,c \in \mathbb{R}$ ist überall differenzierbar und die Ableitung ist $f'(x) = 2ax+b$ für alle $x \in \mathbb{R}$. Denn
 		\begin{align*}
-		\lim_{\Delta x \to 0} & \frac{f(x+\Delta x) - f(x)}{\Delta x} \\ & = \lim_{\Delta x \to 0} \frac{a(x+\Delta x)^{2}+b(x+\Delta x) +c - (ax^{2}+bx+c)}{\Delta x} \\ &= \lim_{\Delta x \to 0} \frac{ax^{2} +2ax\Delta x +a(\Delta x)^{2} + bx +b \Delta x +c -ax^{2} - bx -c}{\Delta x} \\ &= \lim_{\Delta x \to 0  } \frac{2ax\Delta x + a(\Delta x)^{2} +b\Delta x}{\Delta x} = 2ax+b + \lim_{\Delta x \to 0} \frac{(a\Delta x)^{2}}{\Delta x}				
+		\lim_{\Delta x \to 0} & \frac{f(x+\Delta x) - f(x)}{\Delta x} \\ & = \lim_{\Delta x \to 0} \frac{a(x+\Delta x)^{2}+b(x+\Delta x) +c - (ax^{2}+bx+c)}{\Delta x} \\ &= \lim_{\Delta x \to 0} \frac{ax^{2} +2ax\Delta x +a(\Delta x)^{2} + bx +b \Delta x +c -ax^{2} - bx -c}{\Delta x} \\ &= \lim_{\Delta x \to 0  } \frac{2ax\Delta x + a(\Delta x)^{2} +b\Delta x}{\Delta x} = 2ax+b + \lim_{\Delta x \to 0} \frac{a(\Delta x)^{2}}{\Delta x}				
 		\end{align*}
 	\end{example}
 \end{frame}
@@ -172,7 +172,7 @@
 		& = \lim_{\Delta x \to 0} \frac{f(x+\Delta x)\cdot g(x+\Delta x) - f(x)\cdot g(x)}{\Delta x} \\
 		& = \lim_{\Delta x \to 0} \frac{f(x+\Delta x)\cdot g(x+\Delta x) - f(x)\cdot g(x)}{\Delta x} \\
 		& = \lim_{\Delta x \to 0} \frac{f(x+\Delta x)\cdot g(x+\Delta x) - f(x)\cdot g(x+\Delta x) + f(x)\cdot g(x+\Delta x)- f(x)\cdot g(x)}{\Delta x}  \\			
-		& = \lim_{\Delta x \to 0} \frac{\left( f(x+\Delta x) - f(x)\right)\cdot g(x+\Delta x) + f(x)\cdot \left( g(x+\Delta x )- \cdot g(x)\right) }{\Delta x}  \\			
+		& = \lim_{\Delta x \to 0} \frac{\left( f(x+\Delta x) - f(x)\right)\cdot g(x+\Delta x) + f(x)\cdot \left( g(x+\Delta x) - g(x)\right)}{\Delta x}  \\			
 		& = f'(x)\cdot g(x) + f(x)\cdot g'(x)
 		\end{align*}}
 	\end{proof}
@@ -469,6 +469,6 @@
 		\[
 		V''(x_{2})= 24 x_{2} -4(a+b) = - 4\sqrt{a^2+b^2-ab} < 0		
 		\]
-		Also ist nur an der Stelle $x_{2}$ die Volumenfunktion $V(x)$ rechtsgekrümmt mit waagerechter Tangente und entsprechend handelt es sich bei dieser Stelle $x_{2}$ und das lokale Maximum. Das maximale Volumen ist dann $V(x_{2})$.
+		Also ist nur an der Stelle $x_{2}$ die Volumenfunktion $V(x)$ rechtsgekrümmt mit waagerechter Tangente und entsprechend handelt es sich bei dieser Stelle $x_{2}$ um das lokale Maximum. Das maximale Volumen ist dann $V(x_{2})$.
 	\end{example}
 \end{frame} 
