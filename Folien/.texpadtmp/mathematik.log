@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.6.20)  20 JUN 2026 17:23
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.6.20)  20 JUN 2026 17:32
  restricted system commands enabled.
  file:line:error style messages enabled.
 **mathematik.tex
@@ -1516,14 +1516,6 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
 (/usr/local/texlive/2026/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box95
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks55
-\inpenc@posthook=\toks56
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/pstricks-add/pstricks-add.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/pstricks/pstricks.sty
 Package: pstricks 2024/02/02 v0.75 LaTeX wrapper for `PSTricks' (RN,HV)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
@@ -1531,9 +1523,9 @@ File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2026/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks57
-\XKV@tempa@toks=\toks58
-\XKV@tempb@toks=\toks59
+\XKV@toks=\toks55
+\XKV@tempa@toks=\toks56
+\XKV@tempb@toks=\toks57
 )
 \XKV@depth=\count408
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -1575,7 +1567,7 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \pst@cnto=\count427
 \pst@cntp=\count428
 \@zero=\count429
-\pst@toks=\toks60
+\pst@toks=\toks58
 --- We are running lualatex with luapstricks ---
 Lua module: luapstricks 2026-01-10 v0.11 PSTricks backend for LuaLaTeX
 Lua function luaPST = 32
@@ -1592,14 +1584,14 @@ Lua function luaPSTbox = 34 (/usr/local/texlive/2026/texmf-dist/tex/generic/pstr
 \pshooklength=\dimen384
 \pshookwidth=\dimen385
 )
-\pst@customdefs=\toks61
+\pst@customdefs=\toks59
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pstricks/pstricks-dots.tex)
 \pslinearc=\dimen386
 \pst@symbolStep=\dimen387
 \pst@symbolWidth=\dimen388
 \pst@symbolLinewidth=\dimen389
  (/usr/local/texlive/2026/texmf-dist/tex/generic/pstricks/pst-code-grid.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pstricks/pst-code-box.tex
-\everypsbox=\toks62
+\everypsbox=\toks60
 \psframesep=\dimen390
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pstricks/pst-code-arc.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pstricks/pst-code-circle_ellipse.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pstricks/pst-code-ref_rot.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pstricks/pst-code-put.tex
 \pslabelsep=\dimen391
@@ -1621,7 +1613,7 @@ Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/multido/multido.tex  v1.42, 2010/05/14 <tvz>
 \multido@count=\count432
 \multidocount=\count433
-\multido@stuff=\toks63
+\multido@stuff=\toks61
 )
 File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
 )
@@ -1739,59 +1731,75 @@ File: pstricks-add.tex 2022/11/21 v1.94 `PSTricks-add' (hv)
 Package: stackrel 2016/05/16 v1.3 Adding subscript option to stackrel (HO)
  (/usr/local/texlive/2026/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)) (/usr/local/texlive/2026/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+\csq@reset=\count468
+\csq@gtype=\count469
+\csq@glevel=\count470
+\csq@qlevel=\count471
+\csq@maxlvl=\count472
+\csq@tshold=\count473
+\csq@ltx@everypar=\toks62
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count468
+\lrq@indent=\count474
  (/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count469
-\c@listtotal=\count470
-\c@listcount=\count471
-\c@liststart=\count472
-\c@liststop=\count473
-\c@citecount=\count474
-\c@citetotal=\count475
-\c@multicitecount=\count476
-\c@multicitetotal=\count477
-\c@instcount=\count478
-\c@maxnames=\count479
-\c@minnames=\count480
-\c@maxitems=\count481
-\c@minitems=\count482
-\c@citecounter=\count483
-\c@maxcitecounter=\count484
-\c@savedcitecounter=\count485
-\c@uniquelist=\count486
-\c@uniquename=\count487
-\c@refsection=\count488
-\c@refsegment=\count489
-\c@maxextratitle=\count490
-\c@maxextratitleyear=\count491
-\c@maxextraname=\count492
-\c@maxextradate=\count493
-\c@maxextraalpha=\count494
-\c@abbrvpenalty=\count495
-\c@highnamepenalty=\count496
-\c@lownamepenalty=\count497
-\c@maxparens=\count498
-\c@parenlevel=\count499
-\blx@tempcnta=\count500
-\blx@tempcntb=\count501
-\blx@tempcntc=\count502
-\c@blx@maxsection=\count503
-\blx@maxsegment@0=\count504
-\blx@notetype=\count505
-\blx@parenlevel@text=\count506
-\blx@parenlevel@foot=\count507
-\blx@sectionciteorder@0=\count508
-\blx@sectionciteorderinternal@0=\count509
-\blx@entrysetcounter=\count510
-\blx@biblioinstance=\count511
+\c@tabx@nest=\count475
+\c@listtotal=\count476
+\c@listcount=\count477
+\c@liststart=\count478
+\c@liststop=\count479
+\c@citecount=\count480
+\c@citetotal=\count481
+\c@multicitecount=\count482
+\c@multicitetotal=\count483
+\c@instcount=\count484
+\c@maxnames=\count485
+\c@minnames=\count486
+\c@maxitems=\count487
+\c@minitems=\count488
+\c@citecounter=\count489
+\c@maxcitecounter=\count490
+\c@savedcitecounter=\count491
+\c@uniquelist=\count492
+\c@uniquename=\count493
+\c@refsection=\count494
+\c@refsegment=\count495
+\c@maxextratitle=\count496
+\c@maxextratitleyear=\count497
+\c@maxextraname=\count498
+\c@maxextradate=\count499
+\c@maxextraalpha=\count500
+\c@abbrvpenalty=\count501
+\c@highnamepenalty=\count502
+\c@lownamepenalty=\count503
+\c@maxparens=\count504
+\c@parenlevel=\count505
+\blx@tempcnta=\count506
+\blx@tempcntb=\count507
+\blx@tempcntc=\count508
+\c@blx@maxsection=\count509
+\blx@maxsegment@0=\count510
+\blx@notetype=\count511
+\blx@parenlevel@text=\count512
+\blx@parenlevel@foot=\count513
+\blx@sectionciteorder@0=\count514
+\blx@sectionciteorderinternal@0=\count515
+\blx@entrysetcounter=\count516
+\blx@biblioinstance=\count517
 \labelnumberwidth=\skip83
 \labelalphawidth=\skip84
 \biblabelsep=\skip85
@@ -1803,9 +1811,9 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read5
 \blx@bcfout=\write5
 \blx@langwohyphens=\language93
-\c@mincomprange=\count512
-\c@maxcomprange=\count513
-\c@mincompwidth=\count514
+\c@mincomprange=\count518
+\c@maxcomprange=\count519
+\c@mincompwidth=\count520
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -1815,74 +1823,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count515
-\c@savedafterword=\count516
-\c@annotator=\count517
-\c@savedannotator=\count518
-\c@author=\count519
-\c@savedauthor=\count520
-\c@bookauthor=\count521
-\c@savedbookauthor=\count522
-\c@commentator=\count523
-\c@savedcommentator=\count524
-\c@editor=\count525
-\c@savededitor=\count526
-\c@editora=\count527
-\c@savededitora=\count528
-\c@editorb=\count529
-\c@savededitorb=\count530
-\c@editorc=\count531
-\c@savededitorc=\count532
-\c@foreword=\count533
-\c@savedforeword=\count534
-\c@holder=\count535
-\c@savedholder=\count536
-\c@introduction=\count537
-\c@savedintroduction=\count538
-\c@namea=\count539
-\c@savednamea=\count540
-\c@nameb=\count541
-\c@savednameb=\count542
-\c@namec=\count543
-\c@savednamec=\count544
-\c@translator=\count545
-\c@savedtranslator=\count546
-\c@shortauthor=\count547
-\c@savedshortauthor=\count548
-\c@shorteditor=\count549
-\c@savedshorteditor=\count550
-\c@labelname=\count551
-\c@savedlabelname=\count552
-\c@institution=\count553
-\c@savedinstitution=\count554
-\c@lista=\count555
-\c@savedlista=\count556
-\c@listb=\count557
-\c@savedlistb=\count558
-\c@listc=\count559
-\c@savedlistc=\count560
-\c@listd=\count561
-\c@savedlistd=\count562
-\c@liste=\count563
-\c@savedliste=\count564
-\c@listf=\count565
-\c@savedlistf=\count566
-\c@location=\count567
-\c@savedlocation=\count568
-\c@organization=\count569
-\c@savedorganization=\count570
-\c@origlocation=\count571
-\c@savedoriglocation=\count572
-\c@origpublisher=\count573
-\c@savedorigpublisher=\count574
-\c@publisher=\count575
-\c@savedpublisher=\count576
-\c@language=\count577
-\c@savedlanguage=\count578
-\c@origlanguage=\count579
-\c@savedoriglanguage=\count580
-\c@pageref=\count581
-\c@savedpageref=\count582
+\c@afterword=\count521
+\c@savedafterword=\count522
+\c@annotator=\count523
+\c@savedannotator=\count524
+\c@author=\count525
+\c@savedauthor=\count526
+\c@bookauthor=\count527
+\c@savedbookauthor=\count528
+\c@commentator=\count529
+\c@savedcommentator=\count530
+\c@editor=\count531
+\c@savededitor=\count532
+\c@editora=\count533
+\c@savededitora=\count534
+\c@editorb=\count535
+\c@savededitorb=\count536
+\c@editorc=\count537
+\c@savededitorc=\count538
+\c@foreword=\count539
+\c@savedforeword=\count540
+\c@holder=\count541
+\c@savedholder=\count542
+\c@introduction=\count543
+\c@savedintroduction=\count544
+\c@namea=\count545
+\c@savednamea=\count546
+\c@nameb=\count547
+\c@savednameb=\count548
+\c@namec=\count549
+\c@savednamec=\count550
+\c@translator=\count551
+\c@savedtranslator=\count552
+\c@shortauthor=\count553
+\c@savedshortauthor=\count554
+\c@shorteditor=\count555
+\c@savedshorteditor=\count556
+\c@labelname=\count557
+\c@savedlabelname=\count558
+\c@institution=\count559
+\c@savedinstitution=\count560
+\c@lista=\count561
+\c@savedlista=\count562
+\c@listb=\count563
+\c@savedlistb=\count564
+\c@listc=\count565
+\c@savedlistc=\count566
+\c@listd=\count567
+\c@savedlistd=\count568
+\c@liste=\count569
+\c@savedliste=\count570
+\c@listf=\count571
+\c@savedlistf=\count572
+\c@location=\count573
+\c@savedlocation=\count574
+\c@organization=\count575
+\c@savedorganization=\count576
+\c@origlocation=\count577
+\c@savedoriglocation=\count578
+\c@origpublisher=\count579
+\c@savedorigpublisher=\count580
+\c@publisher=\count581
+\c@savedpublisher=\count582
+\c@language=\count583
+\c@savedlanguage=\count584
+\c@origlanguage=\count585
+\c@savedoriglanguage=\count586
+\c@pageref=\count587
+\c@savedpageref=\count588
 \shorthandwidth=\skip91
 \shortjournalwidth=\skip92
 \shortserieswidth=\skip93
@@ -1909,19 +1917,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count583
-\c@textcitetotal=\count584
-\c@textcitemaxnames=\count585
-\c@biburlbigbreakpenalty=\count586
-\c@biburlbreakpenalty=\count587
-\c@biburlnumpenalty=\count588
-\c@biburlucpenalty=\count589
-\c@biburllcpenalty=\count590
+\c@textcitecount=\count589
+\c@textcitetotal=\count590
+\c@textcitemaxnames=\count591
+\c@biburlbigbreakpenalty=\count592
+\c@biburlbreakpenalty=\count593
+\c@biburlnumpenalty=\count594
+\c@biburlucpenalty=\count595
+\c@biburllcpenalty=\count596
 \biburlbigskip=\muskip20
 \biburlnumskip=\muskip21
 \biburlucskip=\muskip22
 \biburllcskip=\muskip23
-\c@smartand=\count591
+\c@smartand=\count597
 )
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
@@ -1931,8 +1939,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count592
-\c@bbx:relatedtotal=\count593
+\c@bbx:relatedcount=\count598
+\c@bbx:relatedtotal=\count599
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
@@ -1961,47 +1969,45 @@ Package biblatex Info: ... and expl3
 (biblatex)             2026-01-19 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
-)) (/usr/local/texlive/2026/texmf-dist/tex/latex/beamer/beamerthemePaloAlto.sty
-(/usr/local/texlive/2026/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/beamer/beamerthemePaloAlto.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen423
 \beamer@headheight=\dimen424
 LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/m/n' will be
 (Font)              scaled to size 13.70851pt on input line 18.
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)) (/usr/local/texlive/2026/texmf-dist/tex/latex/beamer/beamercolorthemeseahorse.sty)
-
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
-\@quotelevel=\count594
-\@quotereset=\count595
-(/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.aux
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
+ (/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 9.
 )
 \openout1 = mathematik.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 220.
-LaTeX Font Info:    ... okay on input line 220.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 221.
+LaTeX Font Info:    ... okay on input line 221.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -2039,24 +2045,24 @@ LaTeX Font Info:    ... okay on input line 220.
 
 (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count596
+\scratchcounter=\count600
 \scratchdimen=\dimen425
 \scratchbox=\box107
-\nofMPsegments=\count597
-\nofMParguments=\count598
-\everyMPshowfont=\toks64
-\MPscratchCnt=\count599
+\nofMPsegments=\count601
+\nofMParguments=\count602
+\everyMPshowfont=\toks63
+\MPscratchCnt=\count603
 \MPscratchDim=\dimen426
-\MPnumerator=\count600
-\makeMPintoPDFobject=\count601
-\everyMPtoPDFconversion=\toks65
+\MPnumerator=\count604
+\makeMPintoPDFobject=\count605
+\everyMPtoPDFconversion=\toks64
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 220.
+Package hyperref Info: Link coloring ON on input line 221.
  (/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.out) (/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.out)
 \@outlinefile=\write6
 
@@ -2109,7 +2115,7 @@ Package unicode-math Warning: I'm going to overwrite the following commands
 (/usr/local/texlive/2026/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 220.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 221.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
@@ -2133,13 +2139,13 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'mathematik.bbl' found.
  (/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.bbl)
-Package biblatex Info: Reference section=0 on input line 220.
-Package biblatex Info: Reference segment=0 on input line 220.
+Package biblatex Info: Reference section=0 on input line 221.
+Package biblatex Info: Reference segment=0 on input line 221.
  (/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.nav)
 LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/m/n' will be
-(Font)              scaled to size 4.7599pt on input line 220.
+(Font)              scaled to size 4.7599pt on input line 221.
 LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/m/n' will be
-(Font)              scaled to size 6.66386pt on input line 230.
+(Font)              scaled to size 6.66386pt on input line 231.
 Package epstopdf Info: Source file: <Logo-CMYK.eps>
 (epstopdf)                    date: 2026-06-20 16:39:41
 (epstopdf)                    size: 243122 bytes
@@ -2147,28 +2153,28 @@ Package epstopdf Info: Source file: <Logo-CMYK.eps>
 (epstopdf)                    date: 2026-06-20 16:39:41
 (epstopdf)                    size: 30712 bytes
 (epstopdf)             Command: <repstopdf --outfile=Logo-CMYK-eps-converted-to.pdf Logo-CMYK.eps>
-(epstopdf)             \includegraphics on input line 230.
+(epstopdf)             \includegraphics on input line 231.
 Package epstopdf Info: Output file is already uptodate.
 <Logo-CMYK-eps-converted-to.pdf, id=26, 285.065pt x 89.33376pt>
 File: Logo-CMYK-eps-converted-to.pdf Graphic file (type pdf)
 <use Logo-CMYK-eps-converted-to.pdf>
-Package luatex.def Info: Logo-CMYK-eps-converted-to.pdf  used on input line 230.
+Package luatex.def Info: Logo-CMYK-eps-converted-to.pdf  used on input line 231.
 (luatex.def)             Requested size: 85.52016pt x 26.80032pt.
 LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/m/n' will be
-(Font)              scaled to size 3.80792pt on input line 230.
-LaTeX Font Info:    Calculating math sizes for size <4> on input line 230.
+(Font)              scaled to size 3.80792pt on input line 231.
+LaTeX Font Info:    Calculating math sizes for size <4> on input line 231.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 230.
+(Font)              size <5> substituted on input line 231.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 230.
+(Font)              size <5> substituted on input line 231.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 230.
+(Font)              size <5> substituted on input line 231.
 
 
 Overfull \vbox (27.45322pt too high) has occurred while \output is active []
@@ -2291,16 +2297,7 @@ Overfull \vbox (27.45322pt too high) has occurred while \output is active []
 File: Geogebra/newton_geometrisch.png Graphic file (type png)
 <use Geogebra/newton_geometrisch.png>
 Package luatex.def Info: Geogebra/newton_geometrisch.png  used on input line 49.
-(luatex.def)             Requested size: 398.33858pt x 229.9603pt.
-
-Overfull \hbox (107.59595pt too wide) in paragraph at lines 49--49
-[][]  
- []
-
-
-Overfull \vbox (6.45197pt too high) detected at line 49
- []
-
+(luatex.def)             Requested size: 290.74263pt x 167.84573pt.
 
 Overfull \vbox (27.45322pt too high) has occurred while \output is active []
 
@@ -2750,16 +2747,16 @@ Package logreq Info: Writing requests to 'mathematik.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 62613 strings out of 476076
- 125165,2848258 words of node,token memory allocated
- 10989 words of node memory still in use:
-   189 hlist, 31 vlist, 20 rule, 30 disc, 4 local_par, 35 math, 262 glue, 112 kern, 29 penalty, 401 glyph, 716 attribute, 84 glue_spec, 359 attribute_list, 4 write, 58 pdf_literal, 30 pdf_colorstack nodes
-   avail lists: 1:4,2:3775,3:1695,4:780,5:764,6:151,7:4917,8:95,9:1425,10:22,11:494
- 83233 multiletter control sequences out of 65536+600000
- 213 fonts using 53320423 bytes
+ 63162 strings out of 476076
+ 125081,2848258 words of node,token memory allocated
+ 10945 words of node memory still in use:
+   189 hlist, 31 vlist, 20 rule, 30 disc, 4 local_par, 35 math, 260 glue, 110 kern, 29 penalty, 399 glyph, 714 attribute, 84 glue_spec, 358 attribute_list, 4 write, 58 pdf_literal, 30 pdf_colorstack nodes
+   avail lists: 1:2,2:3778,3:1695,4:780,5:766,6:151,7:4921,8:95,9:1425,10:22,11:494
+ 83772 multiletter control sequences out of 65536+600000
+ 213 fonts using 53320775 bytes
  128i,17n,117p,1175b,2465s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-bolditalic.otf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-italic.otf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/tex-gyre/texgyrebonum-regular.otf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-bold.otf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2026/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-regular.otf>
-Output written on mathematik.pdf (86 pages, 875781 bytes).
+Output written on mathematik.pdf (86 pages, 876022 bytes).
 
 PDF statistics: 5232 PDF objects out of 6186 (max. 8388607)
  4550 compressed objects within 46 object streams

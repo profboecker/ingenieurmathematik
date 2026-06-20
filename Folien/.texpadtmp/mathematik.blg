@@ -1,9 +1,9 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is '/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.blg'
-[28] biber-darwin:342> INFO - === Sat Jun 20, 2026, 17:23:43
-[35] Biber.pm:421> INFO - Reading '/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.bcf'
-[66] Biber.pm:1002> INFO - Found 0 citekeys in bib section 0
-[73] bbl.pm:676> INFO - Writing '/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.bbl' with encoding 'UTF-8'
-[73] bbl.pm:779> INFO - Output to /Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.bbl
-[73] Biber.pm:132> WARN - The file '/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.bcf' does not contain any citations!
-[73] Biber.pm:134> INFO - WARNINGS: 1
+[29] biber-darwin:342> INFO - === Sat Jun 20, 2026, 17:32:43
+[37] Biber.pm:421> INFO - Reading '/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.bcf'
+[70] Biber.pm:1002> INFO - Found 0 citekeys in bib section 0
+[76] bbl.pm:676> INFO - Writing '/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.bbl' with encoding 'UTF-8'
+[76] bbl.pm:779> INFO - Output to /Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.bbl
+[76] Biber.pm:132> WARN - The file '/Users/stefan/Github/ingenieurmathematik/Folien/.texpadtmp/mathematik.bcf' does not contain any citations!
+[76] Biber.pm:134> INFO - WARNINGS: 1

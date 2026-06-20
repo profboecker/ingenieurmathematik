@@ -150,64 +150,26 @@
 \bibliography{mathematik}
 
 
-%\usetheme{PaloAlto}
-%\usecolortheme{dove}
-%\useinnertheme{inmargin}
-%%\usetheme{PaloAlto}
-\usetheme{PaloAlto}
-\usecolortheme{seahorse}
+%% --- Theme: Metropolis (modernes, minimales Design)
+\usetheme[progressbar=frametitle, block=fill]{metropolis}
+
 \definecolor{fhblau}{cmyk}{1,0.7,0,0}
-\setbeamercolor{logo}{bg=white}
-\setbeamercolor{frametitle}{bg=white}
-\setbeamercolor{frametitle}{fg=fhblau}
-\setbeamercolor{sidebar}{bg=white}
-\setbeamercolor{sidebar}{fg=fhblau}
-\setbeamercolor{block title}{bg=fhblau}
-\setbeamercolor{block title}{fg=white}
-\setbeamercolor{block body}{bg=white}
-\setbeamercolor{block body}{fg=fhblau}
-\setbeamercolor{title}{bg=fhblau}
-\setbeamercolor{title}{fg=white}
-%\usetheme{AnnArbor}
-%Antibes
-%Bergen
-%Berkeley
-%Berlin
-%Boadilla
-%boxes
-%CambridgeUS
-%Copenhagen
-%Darmstadt
-%default
-%Dresden
-%Frankfurt
-%Goettingen
-%Hannover
-%Ilmenau
-%JuanLesPins
-%Luebeck
-%Madrid
-%Malmoe
-%Marburg
-%Montpellier
-%PaloAlto
-%Pittsburgh
-%Rochester
-%Singapore
-%Szeged
-%Warsaw
 
-%\AtBeginSection[]{
-%\begin{frame}
-%\tableofcontents[currentsection]
-%\end{frame}
-%}
+\setbeamercolor{palette primary}{bg=fhblau, fg=white}
+\setbeamercolor{alerted text}{fg=fhblau}
+\setbeamercolor{progress bar}{fg=fhblau!80!white, bg=fhblau!20!white}
+\setbeamercolor{title separator}{fg=fhblau}
+\setbeamercolor{block title}{bg=fhblau, fg=white}
+\setbeamercolor{block body}{bg=fhblau!8!white}
 
+%% Schriften nach Metropolis-Laden wiederherstellen
+\setmainfont{TeX Gyre Bonum}
+\setsansfont{TeX Gyre Heros}[Scale=MatchUppercase]
+\setmonofont{Source Code Pro}[Scale=MatchLowercase,FakeStretch=0.85]
+\setmathfont{TeX Gyre Pagella Math}
 
 \pgfdeclareimage[width=1.5cm]{fh-logo}{Logo-CMYK-eps-converted-to.pdf}
-%\logo{\pgfuseimage{fh-logo}}
-%\logo{Logo-CMYK.eps}
-\useoutertheme{sidebar}
+%% --- Theme: ENDE
 
 
 \title[Ingenieurmathematik]{Ingenieurmathematik\\ für Wirtschaftsingenieure}
@@ -223,7 +185,6 @@
 \renewcommand{\refname}{Literatur}
 %\renewcommand{\bibname}{Literatur}
 	
-\logo{\pgfuseimage{fh-logo}}
 %\part{Organistorisches}
 %\section{Organisatorisches}
 \begin{frame}
